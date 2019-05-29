@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/andela/ah-frontend-invictus.svg?branch=develop)](https://travis-ci.com/andela/ah-frontend-invictus)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
