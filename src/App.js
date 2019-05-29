@@ -1,11 +1,15 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.scss";
 
 class App extends Component {
-  render () {
+  render() {
     return (
       <div className="App">
-        <p>Author's Haven</p>
+        <div className="row">
+          <div className="col-md-4"> </div>
+          <p className="card col-md-4 company_name">Author's Haven</p>
+          <div className="col-md-4" />
+        </div>
       </div>
     );
   }
