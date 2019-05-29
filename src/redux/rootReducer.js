@@ -1,6 +1,6 @@
-import { combineReducers } from 'redux'
-import indexReducer from './indexReducer'
+import { combineReducers } from 'redux';
+import indexReducer from './indexReducer';
 
 export default combineReducers({
-    'test': indexReducer
+  test: indexReducer
 });
