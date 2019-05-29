@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> matches snapshot 1`] = `
+<div>
+  <h5>
+    Authors Haven
+  </h5>
+</div>
+`;

@@ -15,21 +15,7 @@ exports[`<App /> matches snapshot 1`] = `
   <div
     className="App"
   >
-    <div
-      className="row"
-    >
-      <div
-        className="col-md-4"
-      />
-      <p
-        className="card col-md-4 company_name"
-      >
-        Author's Haven
-      </p>
-      <div
-        className="col-md-4"
-      />
-    </div>
+    <Router />
   </div>
 </Provider>
 `;
