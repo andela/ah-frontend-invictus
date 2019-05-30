@@ -18,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test -u --verbose",
     "eject": "react-scripts eject",
     "lint": "eslint 'src/**/*.js*' --fix"
   },
@@ -56,5 +56,15 @@
     "husky": "^2.3.0",
     "lint-staged": "^8.1.7",
     "react-test-renderer": "^16.8.6"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/index.js",
+      "!**/serviceWorker.js"
+    ],
+    "coverageReporters": [
+      "lcov"
+    ]
   }
 }

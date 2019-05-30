@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/andela/ah-frontend-invictus.svg?branch=develop)](https://travis-ci.com/andela/ah-frontend-invictus)
+[![Build Status](https://travis-ci.com/andela/ah-frontend-invictus.svg?branch=develop)](https://travis-ci.com/andela/ah-frontend-invictus)  [![Maintainability](https://api.codeclimate.com/v1/badges/801995206d57a724c016/maintainability)](https://codeclimate.com/github/andela/ah-frontend-invictus/maintainability)   [![Test Coverage](https://api.codeclimate.com/v1/badges/801995206d57a724c016/test_coverage)](https://codeclimate.com/github/andela/ah-frontend-invictus/test_coverage)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
