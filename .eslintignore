@@ -1,2 +1,3 @@
 *.snap
 serviceWorker.js
+server.js
