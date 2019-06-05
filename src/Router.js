@@ -8,6 +8,8 @@ import RequestResetPassword from './app/containers/ResetPassword/RequestResetPas
 import ResetPassword from './app/containers/ResetPassword/ResetPassword';
 import SignupComponent from './app/containers/Signup';
 import ArticleContainer from './app/containers/ArticleContainer';
+import ProfileComponent from './app/containers/ProfileContainer';
+import editProfileComponent from './app/containers/editProfileContainer';
 
 
 class Router extends Component {
@@ -21,6 +23,8 @@ class Router extends Component {
         <Route path="/resetpassword/:token" component={ResetPassword} />
         <Route path="/signup" component={SignupComponent} />
         <Route path="/articles/create" component={ArticleContainer} />
+        <Route path="/profile" component={ProfileComponent} />
+        <Route path="/editprofile" component={editProfileComponent} />
       </BrowserRouter>
     );
   }

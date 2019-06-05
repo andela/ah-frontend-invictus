@@ -1,74 +1,120 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Router /> matches snapshot 1`] = `
-Array [
-  <div
-    class="Toastify"
-  />,
-  <nav
-    class="navbar navbar-expand-lg navbar-dark"
-  >
-    <button
-      aria-controls="navbarTogglerDemo01"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-      class="navbar-toggler nav-button"
-      data-target="#navbarTogglerah"
-      data-toggle="collapse"
-      type="button"
-    >
-      <span
-        class="navbar-toggler-icon"
+<BrowserRouter>
+  <ToastContainer
+    autoClose={5000}
+    bodyClassName={null}
+    className={null}
+    closeButton={
+      <CloseButton
+        ariaLabel="close"
       />
-    </button>
-    <div
-      class="collapse navbar-collapse"
-      id="navbarTogglerah"
-    >
-      <ul
-        class="navbar-nav mr-auto mt-2 mt-lg-0"
-      >
-        <li
-          class="nav-item active"
-        >
-          <a
-            class="nav-link"
-            href="/"
-          >
-            Home
-          </a>
-        </li>
-      </ul>
-      <ul
-        class="navbar-nav ml-2 "
-      >
-        <li
-          class="nav-item"
-        >
-          <a
-            class="nav-link"
-            href="/login"
-          >
-            Login 
-          </a>
-        </li>
-        <li
-          class="nav-item"
-        >
-          <a
-            class="nav-link nav-link-active"
-            href="/signup"
-          >
-            Signup 
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>,
-  <img
-    alt="Banner"
-    class="banner-img"
-    src="ah_banner.png"
-  />,
-]
+    }
+    closeOnClick={true}
+    draggable={true}
+    draggablePercent={80}
+    hideProgressBar={false}
+    newestOnTop={false}
+    pauseOnFocusLoss={true}
+    pauseOnHover={true}
+    position="top-right"
+    progressClassName={null}
+    progressStyle={null}
+    role="alert"
+    rtl={false}
+    style={null}
+    toastClassName={null}
+    transition={[Function]}
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/"
+  />
+  <Route
+    component={
+      Object {
+        "$$typeof": Symbol(react.memo),
+        "WrappedComponent": [Function],
+        "compare": null,
+        "displayName": "Connect(LoginContainer)",
+        "type": [Function],
+      }
+    }
+    path="/login"
+  />
+  <Route
+    component={
+      Object {
+        "$$typeof": Symbol(react.memo),
+        "WrappedComponent": [Function],
+        "compare": null,
+        "displayName": "Connect(ResetPassword)",
+        "type": [Function],
+      }
+    }
+    path="/password/reset"
+  />
+  <Route
+    component={
+      Object {
+        "$$typeof": Symbol(react.memo),
+        "WrappedComponent": [Function],
+        "compare": null,
+        "displayName": "Connect(ResetPassword)",
+        "type": [Function],
+      }
+    }
+    path="/resetpassword/:token"
+  />
+  <Route
+    component={
+      Object {
+        "$$typeof": Symbol(react.memo),
+        "WrappedComponent": [Function],
+        "compare": null,
+        "displayName": "Connect(SignupComponent)",
+        "type": [Function],
+      }
+    }
+    path="/signup"
+  />
+  <Route
+    component={
+      Object {
+        "$$typeof": Symbol(react.memo),
+        "WrappedComponent": [Function],
+        "compare": null,
+        "displayName": "Connect(ArticleContainer)",
+        "type": [Function],
+      }
+    }
+    path="/articles/create"
+  />
+  <Route
+    component={
+      Object {
+        "$$typeof": Symbol(react.memo),
+        "WrappedComponent": [Function],
+        "compare": null,
+        "displayName": "Connect(ProfileContainer)",
+        "type": [Function],
+      }
+    }
+    path="/profile"
+  />
+  <Route
+    component={
+      Object {
+        "$$typeof": Symbol(react.memo),
+        "WrappedComponent": [Function],
+        "compare": null,
+        "displayName": "Connect(EditProfileContainer)",
+        "type": [Function],
+      }
+    }
+    path="/editprofile"
+  />
+</BrowserRouter>
 `;
