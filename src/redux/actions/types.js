@@ -12,3 +12,8 @@ export const signupType = {
   SIGNUP_ERROR: "SIGNUP_ERROR",
   IS_LOADING: "IS_LOADING"
 };
+
+export const articleTypes = {
+  CREATE_ARTICLE_SUCCESS: 'CREATE_ARTICLE_SUCCESS',
+  CREATE_ARTICLE_FAIL: 'CREATE_ARTICLE_FAIL'
+};

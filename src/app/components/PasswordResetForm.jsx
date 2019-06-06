@@ -1,5 +1,6 @@
 import React from 'react';
 import Errors from '../containers/Errors';
+import '../../assets/styles/resetpassword.scss';
 
 const PasswordResetForm = (props) => {
   props = props.props;
