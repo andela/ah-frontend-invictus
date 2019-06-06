@@ -1,7 +1,7 @@
 import React from 'react';
 import toJson from 'enzyme-to-json';
 import { shallow } from 'enzyme';
-import Home from '../Home';
+import Home from '../../app/containers/Home';
 
 describe('<Home />', () => {
   let wrapper;
