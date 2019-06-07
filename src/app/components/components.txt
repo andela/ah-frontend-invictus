@@ -1,0 +1,2 @@
+All app components will go into this folder.
+Delete this after adding atleast one component.

@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import HomePage from '../src/app/Home/Home';
-import LoginPage from '../src/app/Login/Login';
-
+import HomePage from '../src/app/containers/Home';
+import LoginPage from './app/containers/Login';
 
 class Router extends Component {
   render () {
