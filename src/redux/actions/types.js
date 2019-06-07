@@ -1,0 +1,4 @@
+export const loginTypes = {
+  LOGIN_SUCCESS: 'USERS_LOGIN_SUCCESS',
+  LOGIN_FAILURE: 'USERS_LOGIN_FAILURE'
+};

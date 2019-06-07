@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import indexReducer from './indexReducer';
+import loginReducer from '../redux/reducers/LoginReducer';
 
 export default combineReducers({
-  test: indexReducer
+  auth: loginReducer
 });

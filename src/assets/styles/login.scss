@@ -1,0 +1,160 @@
+@import "./var";
+
+.card {
+
+  background-color: $background-color;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px -8px $box-shadow;
+  margin: 10px 15px 0;
+  padding: 60px 50px 30px;
+}
+
+.input-field {
+
+  margin-bottom: 10px;
+}
+
+.input-field::placeholder {
+
+  font-size: 0.9em;
+}
+
+.input-field:focus {
+
+  box-shadow: none;
+}
+
+.login-btn {
+
+  background-color: $main-color;
+  border: 1px solid $main-color;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.login-btn:hover {
+
+  background-color: $button-hover-color;
+  border-color: $button-hover-color;
+}
+
+.banner {
+
+  margin-top: 50px;
+}
+
+.loginwith {
+
+  margin-bottom: 30px;
+}
+
+.banner-img {
+
+  height: auto;
+  width: 60%;
+}
+
+.loginwith-img {
+
+  height: auto;
+  width: 100%;
+}
+
+.socialmedia-img {
+
+  height: auto;
+  width: 30%;
+}
+
+.have-account {
+
+  color: $have-account;
+  text-align: right;
+}
+
+.success {
+
+  background-color: $success;
+  border-radius: 0.4em;
+  padding: 15px 10px 5px;
+
+  p {
+
+    color: $color;
+    font-size: auto;
+  }
+
+}
+
+p {
+
+  text-align: left;
+
+  .input-error {
+
+    color: $input-error;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .card {
+
+    margin: 10px 0 0;
+  }
+
+}
+
+@media screen and (max-width: 765px) {
+
+  .card {
+
+    margin: 10px 40px 0;
+  }
+
+  .socialmedia-img {
+
+    height: auto;
+    margin-right: 15px;
+    width: 40px;
+  }
+
+  .social-media-row {
+
+    margin-left: 10%;
+  }
+
+}
+
+@media screen and (max-width: 440px) {
+
+  .twitter-img {
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+@media screen and (max-width: 440px) {
+
+  .socialmedia-img {
+
+    height: auto;
+    margin: 5px;
+    width: 30px;
+  }
+
+}
+
+@media screen and (max-width: 440px) {
+
+  .socialmedia-img {
+
+    height: auto;
+    margin: 15px;
+    width: 30px;
+  }
+
+}

@@ -8,11 +8,10 @@ class App extends Component {
   render () {
     return (
       <Provider store={store}>
-        <div className="App">
-          <Router />
-        </div>
+        <Router>
+          <div className="app-name"/>
+        </Router>
       </Provider>
-
     );
   }
 }

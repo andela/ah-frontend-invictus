@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Login /> matches snapshot 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-sm-4"
+  />
+  <div
+    className="col-sm-4"
+  >
+    <div
+      className="banner"
+    >
+      <img
+        alt="Banner"
+        className="banner-img"
+        src="ah_banner.png"
+      />
+    </div>
+    <div
+      className="card"
+    >
+      <form
+        onSubmit={[MockFunction]}
+      >
+        <div
+          className="form-group"
+        >
+          <label>
+            Login Form
+          </label>
+          <input
+            className="form-control input-field"
+            id="UserEmail"
+            name="email"
+            onChange={[MockFunction]}
+            placeholder="Email"
+            required={true}
+            type="text"
+            value=""
+          />
+          <input
+            className="form-control input-field"
+            name="password"
+            onChange={[Function]}
+            placeholder="Password"
+            required={true}
+            type="password"
+            value=""
+          />
+          <input
+            className="btn btn-primary login-btn"
+            type="submit"
+          />
+          <p
+            className="have-account"
+          >
+            Forgot password? 
+            <a
+              href="#"
+            >
+              Reset
+            </a>
+          </p>
+        </div>
+        <div
+          className="loginwith"
+        >
+          <img
+            alt="login-with"
+            className="loginwith-img"
+            src="loginwith.png"
+          />
+          <div
+            className="row social-media-row"
+          >
+            <div
+              className="col-md-6 col-4"
+            >
+              <img
+                alt="facebook-logo"
+                className="socialmedia-img facebook-img"
+                src="facebook.png"
+              />
+              <img
+                alt="google-logo"
+                className="socialmedia-img google-img"
+                src="google.png"
+              />
+              <img
+                alt="twitter-logo"
+                className="socialmedia-img twitter-img"
+                src="twitter.png"
+              />
+            </div>
+          </div>
+        </div>
+        <p
+          className="have-account"
+        >
+          Not yet a member? 
+          <a
+            href="#"
+          >
+            Sign up
+          </a>
+        </p>
+      </form>
+    </div>
+  </div>
+  <div
+    className="col-sm-3"
+  />
+</div>
+`;

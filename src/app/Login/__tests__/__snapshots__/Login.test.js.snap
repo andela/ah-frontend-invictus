@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<Login /> matches snapshot 1`] = `
-<div>
-  <h5>
-    Authors Haven Login
-  </h5>
-</div>
-`;
