@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+import SocialAuthentication from '../containers/SocialAuth';
 import "../../assets/styles/signup.scss";
+import '../../assets/styles/app.scss';
 import { Link } from "react-router-dom";
 
 class SignupFormComponent extends Component {
@@ -65,18 +67,11 @@ class SignupFormComponent extends Component {
                   <img className="signupwith-img" alt="signup-with"
                     src={require("../../assets/images/signupwith.png")} />
                   <div className="row social-media-row">
-                    <div className="col-md-4 col-2">
-                      <img className="socialmedia-img-signup" alt="facebook-logo"
-                        src={require("../../assets/images/facebook.png")} />
+                    <div className="col-md-1" />
+                    <div className="col-md-10">
+                      <SocialAuthentication />
                     </div>
-                    <div className="col-md-4 col-2">
-                      <img className="socialmedia-img-signup twitter-img" alt="twitter-logo"
-                        src={require("../../assets/images/twitter.png")} />
-                    </div>
-                    <div className="col-md-4 col-2">
-                      <img className="socialmedia-img-signup" alt="google-logo"
-                        src={require("../../assets/images/google.png")} />
-                    </div>
+                    <div className="col-md-1" />
                   </div>
                 </div>
                 <p className="have-an-account">Already have an account!

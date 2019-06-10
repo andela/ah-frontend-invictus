@@ -77,29 +77,15 @@ exports[`<Login /> matches snapshot 1`] = `
             className="row social-media-row"
           >
             <div
-              className="col-md-2"
+              className="col-md-1"
             />
             <div
-              className="col-md-8"
+              className="col-md-10"
             >
-              <img
-                alt="facebook-logo"
-                className="socialmedia-img facebook-img"
-                src="facebook.png"
-              />
-              <img
-                alt="google-logo"
-                className="socialmedia-img google-img"
-                src="google.png"
-              />
-              <img
-                alt="twitter-logo"
-                className="socialmedia-img twitter-img"
-                src="twitter.png"
-              />
+              <Connect(SocialAuthentication) />
             </div>
             <div
-              className="col-md-2"
+              className="col-md-1"
             />
           </div>
         </div>

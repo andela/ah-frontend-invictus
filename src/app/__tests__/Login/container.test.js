@@ -1,14 +1,15 @@
 import React from 'react';
 import toJson from 'enzyme-to-json';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import { LoginContainer, mapStateToProps } from '../../containers/LoginContainer';
 
-
 describe('loginContainer Component', () => {
-  const wrapper = mount(<LoginContainer />);
+  const wrapper = shallow(<LoginContainer />);
+
   it('matches snapshot', () => {
     expect(toJson(wrapper)).toMatchSnapshot();
   });
+
   it('should call an onChange function', () => {
     const props = {
       onChange: jest.fn(),
@@ -21,17 +22,29 @@ describe('loginContainer Component', () => {
     const event = {
       preventDefault: () => {},
       target: {
-        name: 'body',
+        name: 'email',
         value: 'abc'
       }
     };
-    const component = mount(
-      <LoginContainer {...props} />,
+    const emptypassword = {
+      preventDefault: jest.fn(),
+      target: {
+        name: 'password',
+        value: undefined
+      }
+    };
+    const component = shallow(
+      <LoginContainer {...props} />
     );
-    const EmailInput = component.find('#UserEmail').first();
-    EmailInput.simulate('change', event);
-    expect(event.target.value).toEqual('abc');
+    component.setState({ email: "email" });
+    component.instance().onChange(event);
+    expect(component.instance().state.email).toBe('abc');
+    expect(component.instance().checkPassword(undefined)).toBe(false);
+    component.setState({ email: 'mwinel@live.com', password: undefined });
+    component.instance().handleSubmit(emptypassword);
+    expect(component.state('errors').userPassword).toBe('Password field is empty');
   });
+
   it('should call a submit a form', () => {
     const props = {
       onChange: jest.fn(),
@@ -41,7 +54,7 @@ describe('loginContainer Component', () => {
       checkPassword: jest.fn(),
       loginAction: jest.fn()
     };
-    const wrapper = mount(
+    const wrapper = shallow(
       <LoginContainer {...props} />,
     );
     wrapper.setState({
@@ -52,6 +65,7 @@ describe('loginContainer Component', () => {
     instance.handleSubmit({ preventDefault: jest.fn() });
     expect(checkValidEmail).toHaveBeenCalled();
   });
+
   it('Valid Email', () => {
     const props = {
       onChange: jest.fn(),
@@ -61,7 +75,7 @@ describe('loginContainer Component', () => {
       checkPassword: jest.fn(),
       loginAction: jest.fn()
     };
-    const wrapper = mount(
+    const wrapper = shallow(
       <LoginContainer {...props} />,
     );
     wrapper.setState({
@@ -82,7 +96,7 @@ describe('loginContainer Component', () => {
       checkPassword: jest.fn(),
       loginAction: jest.fn()
     };
-    const wrapper = mount(
+    const wrapper = shallow(
       <LoginContainer {...props} />,
     );
     wrapper.setState({
@@ -104,7 +118,7 @@ describe('loginContainer Component', () => {
       checkPassword: jest.fn(),
       loginAction: jest.fn()
     };
-    const wrapper = mount(
+    const wrapper = shallow(
       <LoginContainer {...props} />,
     );
     wrapper.setState({
@@ -115,6 +129,7 @@ describe('loginContainer Component', () => {
     instance.handleSubmit({ preventDefault: jest.fn() });
     expect('Email required').toEqual(instance.state.errors.userEmail);
   });
+
   it('Test everything is fine', () => {
     const props = {
       onChange: jest.fn(),
@@ -124,7 +139,7 @@ describe('loginContainer Component', () => {
       checkPassword: jest.fn(),
       loginAction: jest.fn()
     };
-    const wrapper = mount(
+    const wrapper = shallow(
       <LoginContainer {...props} />,
     );
     wrapper.setState({
@@ -136,6 +151,7 @@ describe('loginContainer Component', () => {
     instance.handleSubmit({ preventDefault: jest.fn() });
     expect(props.loginAction).toHaveBeenCalled();
   });
+
   it('Testing mapStateToProps', () => {
     const initialState = {
       auth: {}

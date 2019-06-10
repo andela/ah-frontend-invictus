@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import SocialAuthentication from '../containers/SocialAuth';
 import '../../assets/styles/login.scss';
+import '../../assets/styles/app.scss';
 
 const Login = (
   {
@@ -41,16 +43,11 @@ const Login = (
               <img className="loginwith-img" alt="login-with"
                 src={require("../../assets/images/loginwith.png")} />
               <div className="row social-media-row">
-                <div className="col-md-2" />
-                <div className="col-md-8">
-                  <img className="socialmedia-img facebook-img" alt="facebook-logo"
-                    src={require("../../assets/images/facebook.png")} />
-                  <img className="socialmedia-img google-img" alt="google-logo"
-                    src={require("../../assets/images/google.png")} />
-                  <img className="socialmedia-img twitter-img" alt="twitter-logo"
-                    src={require("../../assets/images/twitter.png")} />
+                <div className="col-md-1" />
+                <div className="col-md-10">
+                  <SocialAuthentication />
                 </div>
-                <div className="col-md-2" />
+                <div className="col-md-1" />
               </div>
             </div>
             <p className="have-account">Not yet a member? <a href="/signup">Sign up</a></p>
