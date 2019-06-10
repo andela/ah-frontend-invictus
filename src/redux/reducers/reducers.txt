@@ -1,2 +1,0 @@
-All app reducers will go into this folder.
-Delete this after adding atleast one reducer.

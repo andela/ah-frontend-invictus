@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import indexReducer from './indexReducer';
+import RequestResetPassword from './reducers/resetPasswordReducer';
 
 export default combineReducers({
-  test: indexReducer
+  RequestResetPassword: RequestResetPassword
 });
