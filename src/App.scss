@@ -4,13 +4,8 @@ $company-name--background-color: rgb(23, 81, 148);
 $danger-border-color: rgb(245, 198, 203);
 $danger-background-color: rgb(245, 198, 203);
 $danger-color: rgb(114, 28, 36);
-$form-group-background-color: rgb(215, 220, 234);
+$form-group-background-color: #ffffff;
 $white: #ffffff;
-
-.App {
-
-  text-align: center;
-}
 
 .company_name {
 
@@ -18,21 +13,6 @@ $white: #ffffff;
   border: 1px solid $company-name--background-color;
   color: $white;
   margin-top: 100px;
-}
-
-form [type="submit"] {
-
-  background-color: $button--background-color;
-  border-radius: 5px;
-  color: $white;
-  height: 40px;
-}
-
-[type="submit"]:hover,
-
-[type="submit"]:active {
-
-  background-color: $button--background-color;
 }
 
 form [type="text"]:focus,

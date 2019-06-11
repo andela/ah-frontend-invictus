@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Router /> matches snapshot 1`] = `
+Array [
+  <div
+    class="Toastify"
+  />,
+  <div>
+    <h5>
+      Authors Haven
+    </h5>
+  </div>,
+]
+`;
