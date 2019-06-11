@@ -53,7 +53,7 @@ const Login = (
                 <div className="col-md-2" />
               </div>
             </div>
-            <p className="have-account">Not yet a member? <a href="#">Sign up</a></p>
+            <p className="have-account">Not yet a member? <a href="/signup">Sign up</a></p>
           </form>
         </div>
       </div>

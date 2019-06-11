@@ -108,7 +108,7 @@ exports[`<Login /> matches snapshot 1`] = `
         >
           Not yet a member? 
           <a
-            href="#"
+            href="/signup"
           >
             Sign up
           </a>

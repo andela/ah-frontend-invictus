@@ -6,7 +6,7 @@ import HomePage from '../src/app/components/Home';
 import loginContainer from './app/containers/LoginContainer';
 import RequestResetPassword from './app/containers/ResetPassword/RequestResetPassword';
 import ResetPassword from './app/containers/ResetPassword/ResetPassword';
-
+import SignupComponent from './app/containers/Signup';
 
 class Router extends Component {
   render () {
@@ -17,6 +17,7 @@ class Router extends Component {
         <Route path="/login" component={loginContainer} />
         <Route path="/password/reset" component={RequestResetPassword} />
         <Route path="/resetpassword/:token" component={ResetPassword} />
+        <Route path="/signup" component={SignupComponent} />
       </BrowserRouter>
     );
   }

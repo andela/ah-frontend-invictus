@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
+import NavbarComponent from '../components/Navbar';
 
 class Home extends Component {
   render () {
     return (
-      <div>
-        <h5>Authors Haven</h5>
-      </div>
+      <React.Fragment>
+        <NavbarComponent />
+        <img className="banner-img"
+          src={require("../../assets/images/ah_banner.png")}
+          alt="Banner" />
+      </React.Fragment>
     );
   }
 }

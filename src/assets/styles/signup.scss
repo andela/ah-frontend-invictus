@@ -1,11 +1,20 @@
-@import "./var";
+$main-color: #094469;
+$button-hover-color: #0b4970c7;
+$input-error: #d84b4b;
+$succes-background-color: #0bb57b;
+$success-font-color: #063526;
+$card-box-shadow-color: #000000;
+$card-background-color: #ffffff;
 
 .card {
 
-  background-color: $background-color;
+  background-color: $card-background-color;
   border-radius: 6px;
-  box-shadow: 0 8px 16px -8px $box-shadow;
-  margin: 10px 15px 0;
+  box-shadow: 0 8px 16px -8px $card-box-shadow-color;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
   padding: 60px 50px 30px;
 }
 
@@ -23,18 +32,20 @@
 
   box-shadow: none;
 }
+.signup-btn {
 
-.login-btn {
-
-  background-color: $main-color;
+  background-color: $main-color !important;
+  color: $card-background-color;
   border: 1px solid $main-color;
+  border-radius: 0.3em;
   margin-bottom: 10px;
   width: 100%;
+  height: 40px;
 }
 
-.login-btn:hover {
+.signup-btn:hover {
 
-  background-color: $button-hover-color;
+  background-color: $button-hover-color !important;
   border-color: $button-hover-color;
 }
 
@@ -43,45 +54,48 @@
   margin-top: 50px;
 }
 
-.loginwith {
+.signupwith {
 
   margin-bottom: 30px;
 }
 
 .banner-img {
 
-  height: auto;
-  width: 60%;
-}
-
-.loginwith-img {
-
-  height: auto;
   width: 100%;
+  height: auto;
 }
 
-.socialmedia-img {
+.signupwith-img {
+
+  width: 100%;
+  height: auto;
+}
+
+.socialmedia-img-signup {
 
   height: auto;
-  margin: auto;
-  width: 30%;
+  width: 70%;
 }
 
-.have-account {
+.have-an-account {
 
-  color: $have-account;
-  text-align: right;
+  text-align: left;
 }
 
 .success {
 
-  background-color: $success;
+  background-color: $succes-background-color;
   border-radius: 0.4em;
-  padding: 15px 10px 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 15px;
 
   p {
 
-    color: $color;
+    color: $success-font-color;
     font-size: auto;
   }
 
@@ -94,6 +108,8 @@ p {
   .input-error {
 
     color: $input-error;
+    font-size: 80%;
+    margin-top: 1px;
   }
 
 }
@@ -102,7 +118,7 @@ p {
 
   .card {
 
-    margin: 10px 0 0;
+    margin-top: 10px;
   }
 
 }
@@ -116,9 +132,9 @@ p {
 
   .socialmedia-img {
 
-    height: auto;
     margin-right: 15px;
     width: 40px;
+    height: auto;
   }
 
   .social-media-row {
@@ -132,8 +148,8 @@ p {
 
   .twitter-img {
 
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10px;
+    margin-right: 20px;
   }
 
 }
@@ -153,9 +169,9 @@ p {
 
   .socialmedia-img {
 
+    width: 30px;
     height: auto;
     margin: 15px;
-    width: 30px;
   }
 
 }

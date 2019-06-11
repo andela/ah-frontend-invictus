@@ -7,3 +7,8 @@ export const loginTypes = {
   LOGIN_FAILURE: 'USERS_LOGIN_FAILURE'
 };
 
+export const signupType = {
+  SIGNUP_SUCCESS: "SIGNUP_SUCCESS",
+  SIGNUP_ERROR: "SIGNUP_ERROR",
+  IS_LOADING: "IS_LOADING"
+};
