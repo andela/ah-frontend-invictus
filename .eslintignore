@@ -1,3 +1,4 @@
 *.snap
 serviceWorker.js
 server.js
+__tests__

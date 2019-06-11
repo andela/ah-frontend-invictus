@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article container renders without crashing 1`] = `
+<ArticlePresentationComponent
+  handleChange={[Function]}
+  handleSubmit={[Function]}
+/>
+`;
