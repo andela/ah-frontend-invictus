@@ -1,0 +1,36 @@
+@import "./var";
+
+$nav-link-active-hover-color: rgb(110, 148, 170);
+$nav-bar-color:  #022b44;
+$nav-link-color: rgba(224, 237, 241, 0.918);
+
+nav {
+
+  background-color: $nav-bar-color;
+
+}
+
+.nav-link {
+
+  color: $background-color;
+}
+
+.navbar-toggler-icon {
+
+  border: $background-color;
+  color: $nav-link-color;
+  font-size: 110%;
+
+}
+
+.nav-link:hover {
+
+  color: $nav-link-active-hover-color; 
+
+}
+
+.nav-link-active {
+
+  color: $nav-link-active-hover-color;
+
+}

@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SignupFormComponent/> matches snapshot 1`] = `
+<Fragment>
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-4"
+    />
+    <div
+      className="col-md-4"
+    >
+      <div
+        className="banner"
+      >
+        <img
+          alt="Banner"
+          className="banner-img"
+          src="ah_banner.png"
+        />
+      </div>
+      <div
+        className="card"
+      >
+        <form
+          id="signup-form"
+          onSubmit={[MockFunction]}
+        >
+          <input
+            className="form-control input-field"
+            id="username"
+            onChange={[MockFunction]}
+            placeholder="username"
+            type="text"
+          />
+          <p />
+          <input
+            className="form-control input-field"
+            id="email"
+            onChange={[MockFunction]}
+            placeholder="email"
+            type="text"
+          />
+          <p />
+          <input
+            className="form-control input-field"
+            id="password"
+            onChange={[MockFunction]}
+            placeholder="password"
+            type="password"
+          />
+          <p />
+          <button
+            className="signup-btn"
+            type="submit"
+          >
+            Signup
+          </button>
+          <div
+            className="signupwith"
+          >
+            <img
+              alt="signup-with"
+              className="signupwith-img"
+              src="signupwith.png"
+            />
+            <div
+              className="row social-media-row"
+            >
+              <div
+                className="col-md-4 col-2"
+              >
+                <img
+                  alt="facebook-logo"
+                  className="socialmedia-img-signup"
+                  src="facebook.png"
+                />
+              </div>
+              <div
+                className="col-md-4 col-2"
+              >
+                <img
+                  alt="twitter-logo"
+                  className="socialmedia-img-signup twitter-img"
+                  src="twitter.png"
+                />
+              </div>
+              <div
+                className="col-md-4 col-2"
+              >
+                <img
+                  alt="google-logo"
+                  className="socialmedia-img-signup"
+                  src="google.png"
+                />
+              </div>
+            </div>
+          </div>
+          <p
+            className="have-an-account"
+          >
+            Already have an account!
+            <Link
+              to="/login"
+            >
+              Login
+            </Link>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div
+      className="col-md-4"
+    />
+  </div>
+</Fragment>
+`;

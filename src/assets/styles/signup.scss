@@ -1,0 +1,177 @@
+$main-color: #094469;
+$button-hover-color: #0b4970c7;
+$input-error: #d84b4b;
+$succes-background-color: #0bb57b;
+$success-font-color: #063526;
+$card-box-shadow-color: #000000;
+$card-background-color: #ffffff;
+
+.card {
+
+  background-color: $card-background-color;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px -8px $card-box-shadow-color;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  padding: 60px 50px 30px;
+}
+
+.input-field {
+
+  margin-bottom: 10px;
+}
+
+.input-field::placeholder {
+
+  font-size: 0.9em;
+}
+
+.input-field:focus {
+
+  box-shadow: none;
+}
+.signup-btn {
+
+  background-color: $main-color !important;
+  color: $card-background-color;
+  border: 1px solid $main-color;
+  border-radius: 0.3em;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 40px;
+}
+
+.signup-btn:hover {
+
+  background-color: $button-hover-color !important;
+  border-color: $button-hover-color;
+}
+
+.banner {
+
+  margin-top: 50px;
+}
+
+.signupwith {
+
+  margin-bottom: 30px;
+}
+
+.banner-img {
+
+  width: 100%;
+  height: auto;
+}
+
+.signupwith-img {
+
+  width: 100%;
+  height: auto;
+}
+
+.socialmedia-img-signup {
+
+  height: auto;
+  width: 70%;
+}
+
+.have-an-account {
+
+  text-align: left;
+}
+
+.success {
+
+  background-color: $succes-background-color;
+  border-radius: 0.4em;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+
+  p {
+
+    color: $success-font-color;
+    font-size: auto;
+  }
+
+}
+
+p {
+
+  text-align: left;
+
+  .input-error {
+
+    color: $input-error;
+    font-size: 80%;
+    margin-top: 1px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .card {
+
+    margin-top: 10px;
+  }
+
+}
+
+@media screen and (max-width: 765px) {
+
+  .card {
+
+    margin: 10px 40px 0;
+  }
+
+  .socialmedia-img {
+
+    margin-right: 15px;
+    width: 40px;
+    height: auto;
+  }
+
+  .social-media-row {
+
+    margin-left: 10%;
+  }
+
+}
+
+@media screen and (max-width: 440px) {
+
+  .twitter-img {
+
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+
+}
+
+@media screen and (max-width: 440px) {
+
+  .socialmedia-img {
+
+    height: auto;
+    margin: 5px;
+    width: 30px;
+  }
+
+}
+
+@media screen and (max-width: 440px) {
+
+  .socialmedia-img {
+
+    width: 30px;
+    height: auto;
+    margin: 15px;
+  }
+
+}
