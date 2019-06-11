@@ -1,0 +1,16 @@
+@import "./var";
+
+nav {
+
+  background-color: $nav-color;
+}
+
+.nav-link {
+
+  color: $background-color;
+}
+
+.navbar-toggler-icon {
+
+  border: $background-color;
+}

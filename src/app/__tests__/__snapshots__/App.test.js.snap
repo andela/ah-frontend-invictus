@@ -12,10 +12,10 @@ exports[`<App /> matches snapshot 1`] = `
     }
   }
 >
-  <div
-    className="App"
-  >
-    <Router />
-  </div>
+  <Router>
+    <div
+      className="app-name"
+    />
+  </Router>
 </Provider>
 `;
