@@ -1,13 +1,13 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import { ResetPassword } from '../containers/ResetPassword/ResetPassword';
-import { ResetPassword as RequestResetPassword } from '../containers/ResetPassword/RequestResetPassword';
-import Errors from '../containers/Errors';
+import { ResetPassword, mapStateToProps as RP_map } from '../../containers/ResetPassword/ResetPassword';
+import { ResetPassword as RequestResetPassword, mapStateToProps as RRP_map } from '../../containers/ResetPassword/RequestResetPassword';
+import Errors from '../../containers/Errors';
 
 describe('<ResetPassword />', () => {
   const props = {
-    message: "here",
+    message: "Password reset was successfull.",
     errors: ["ada"],
     resetPasswordAction: a => a,
     match: { params: { token: "token" } }
@@ -38,13 +38,13 @@ describe('<ResetPassword />', () => {
     wrapper.instance().componentWillReceiveProps({});
     wrapper.instance().componentWillReceiveProps(props);
     expect(wrapper.instance().state.errors).toEqual(["ada"]);
-    expect(wrapper.instance().state.message).toBe("here");
+    expect(wrapper.instance().state.message).toBe("Password reset was successfull.");
   });
 });
 
 describe('<RequestResetPassword />', () => {
   const props = {
-    message: "here",
+    message: "Check your email-address for a reset-password link.",
     errors: ["ada"],
     resetPasswordRequestAction: a => a
   };
@@ -57,6 +57,8 @@ describe('<RequestResetPassword />', () => {
         value: "email"
       }
     };
+    RRP_map({RequestResetPassword:{message: '',errors: ''}});
+    RP_map({RequestResetPassword:{message: '',errors: ''}});
     wrapper.instance().onChange(event);
     expect(wrapper.instance().state.email).toEqual('email');
   });
@@ -74,7 +76,7 @@ describe('<RequestResetPassword />', () => {
     wrapper.instance().componentWillReceiveProps({});
     wrapper.instance().componentWillReceiveProps(props);
     expect(wrapper.instance().state.errors).toEqual(["ada"]);
-    expect(wrapper.instance().state.message).toBe("here");
+    expect(wrapper.instance().state.message).toBe("Check your email-address for a reset-password link.");
   });
 });
 

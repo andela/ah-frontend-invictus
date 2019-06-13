@@ -48,6 +48,9 @@ exports[`articles component matches snapshot 1`] = `
             >
               Test
             </h4>
+            <Connect(RateArticle)
+              articleId={1}
+            />
             <p
               className="card-text"
             >

@@ -47,7 +47,7 @@ export class ResetPassword extends Component {
       );
     }
 }
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   message: state.RequestResetPassword.message,
   errors: state.RequestResetPassword.errors
 });

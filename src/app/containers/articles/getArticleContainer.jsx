@@ -6,7 +6,7 @@ import fetchArticle from '../../../redux/actions/articles/ArticleActions';
 import { likeArticle, dislikeArticle } from '../../../redux/actions/ArticleActions';
 
 export class Article extends Component {
-  componentDidMount () {
+  componentWillMount () {
     const articleId = this.props.match.params.id;
     this.props.fetchArticle(articleId);
   }

@@ -23,7 +23,10 @@ export const socialTypes = {
   FACEBOOK_AUTH: 'FACEBOOK_AUTH',
   GOOGLE_AUTH: 'GOOGLE_AUTH',
   FACEBOOK_FAIL: 'FACEBOOK_FAIL',
-  GOOGLE_FAIL: 'GOOGLE_FAIL'
+  GOOGLE_FAIL: 'GOOGLE_FAIL' };
+
+export const rateArticleTypes = {
+  RATE_ARTICLE: 'RATE_ARTICLE'
 };
 
 export const profileTypes = {
