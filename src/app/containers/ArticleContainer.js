@@ -4,6 +4,7 @@ import { toast } from 'react-toastify';
 import ArticlePresentationComponent from '../components/ArticleComponent';
 import { postArticle } from '../../redux/actions/ArticleActions';
 import { articleUrl } from '../utils';
+import PropTypes from 'prop-types';
 
 export class ArticleContainer extends Component {
   state = {
@@ -37,7 +38,7 @@ export class ArticleContainer extends Component {
     var headers = {};
     headers['Content-Type'] = 'application/json';
     headers['Authorization'] = `Bearer ${localStorage.getItem('user_token')}`;
-    this.props.postArticle(articleUrl, articleDetails, headers);
+    this.props.postArticle(articleUrl, articleDetails, headers, this.props);
   };
 
   render () {
@@ -50,5 +51,14 @@ export class ArticleContainer extends Component {
     );
   }
 }
+
+ArticleContainer.propTypes = {
+  handleSubmit: PropTypes.func,
+  handleChange: PropTypes.func,
+  checkBlank: PropTypes.func,
+  title: PropTypes.string,
+  body: PropTypes.string,
+  description: PropTypes.string
+};
 
 export default connect(null, { postArticle })(ArticleContainer);

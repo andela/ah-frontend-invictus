@@ -9,12 +9,13 @@ const ArticlesComponent = (props) => {
         <img className="card-image" alt="" src="https://picsum.photos/600/350" />
         <div className="card-body">
           <div><p className="card-publish-date">Published On: {article.created_at.substring(0, 10)}</p></div>
-          <h4 className="card-title">{article.title}</h4>
-          <p className="card-text">{article.description}</p>
+          <h4 className="card-title">{article.title}</h4><p className="card-text">{article.description}</p>
           <div className="card-body-footer">
             <p className="card-footer-text">@{article.author}</p>
-            <p className="card-footer-text">{article.read_time}</p>
-          </div>
+            <p className="card-footer-text">{article.read_time}</p></div>
+          <div className="card-body-likes-dislikes">
+            <p className="card-body-likes-text">Likes: {' '}{article.likes_count}</p>
+            <p className="card-body-dislikes-text">Dislikes: {' '}{article.dislikes_count}</p></div>
         </div>
       </div>
     </Link>

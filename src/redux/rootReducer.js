@@ -7,6 +7,8 @@ import socialAuthReducer from './reducers/socialAuth';
 import userProfileReducer from './reducers/profileReducer';
 import articlesReducer from './reducers/ArticlesReducer';
 import getArticleReducer from './reducers/getArticleReducer';
+import likeArticleReducers from './reducers/likeArticleReducers';
+import dislikeArticleReducers from './reducers/dislikeArticleReducers';
 
 export default combineReducers({
   signup: signupReducer,
@@ -16,5 +18,7 @@ export default combineReducers({
   social: socialAuthReducer,
   profileReducer: userProfileReducer,
   articles: articlesReducer,
-  article: getArticleReducer
+  article: getArticleReducer,
+  likeArticleReducers: likeArticleReducers,
+  dislikeArticleReducers: dislikeArticleReducers
 });

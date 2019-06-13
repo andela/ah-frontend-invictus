@@ -32,6 +32,29 @@ exports[`article component matches snapshot 1`] = `
       >
         Some text
       </div>
+      <div
+        className="like-dislike"
+      >
+        <i
+          className="far fa-thumbs-up"
+          role="presentation"
+          style={
+            Object {
+              "color": "blue",
+              "marginRight": "10px",
+            }
+          }
+        />
+        <i
+          className="far fa-thumbs-down"
+          role="presentation"
+          style={
+            Object {
+              "color": "red",
+            }
+          }
+        />
+      </div>
     </div>
   </div>
 </div>

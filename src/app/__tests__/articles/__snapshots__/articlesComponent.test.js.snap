@@ -68,6 +68,22 @@ exports[`articles component matches snapshot 1`] = `
                 Test
               </p>
             </div>
+            <div
+              className="card-body-likes-dislikes"
+            >
+              <p
+                className="card-body-likes-text"
+              >
+                Likes: 
+                 
+              </p>
+              <p
+                className="card-body-dislikes-text"
+              >
+                Dislikes: 
+                 
+              </p>
+            </div>
           </div>
         </div>
       </Link>

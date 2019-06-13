@@ -93,8 +93,13 @@ describe('post article action', () => {
       body: "There was a great announcement by the CD about the changes about to take place in the company"
     };
     const store = mockStore({});
+    const props = {
+      history: {
+        push: jest.fn()
+      }
+    };
     return store
-      .dispatch(postArticle(articleDetails))
+      .dispatch(postArticle("posturl", articleDetails, {}, props))
       .then(() => {
         expect(store.getActions()).toEqual(actionExpected);
       });
