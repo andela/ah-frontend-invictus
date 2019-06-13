@@ -135,5 +135,17 @@ exports[`<Router /> matches snapshot 1`] = `
     exact={true}
     path="/articles/:id"
   />
+  <Route
+    component={
+      Object {
+        "$$typeof": Symbol(react.memo),
+        "WrappedComponent": [Function],
+        "compare": null,
+        "displayName": "Connect(CommentContainer)",
+        "type": [Function],
+      }
+    }
+    path="/articles/comment"
+  />
 </BrowserRouter>
 `;

@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../../components/Navbar';
+import Comment from '../Comment';
 
 const ArticleComponent = (props) => {
   const { article: { title, body, author, description, tagList = [] }, handleLike, handleDislike } = props;
@@ -21,6 +22,14 @@ const ArticleComponent = (props) => {
             /></div>
           <div className="all-tags"><hr />
             <ul>{tagList.map(tag => <li key={tag} className="tag">{tag}</li>)}</ul>
+              className="far fa-thumbs-up" onClick={handleLike} role="presentation"
+              style={{ color: 'blue', marginRight: '10px' }} />
+            <i
+              className="far fa-thumbs-down" onClick={handleDislike} role="presentation" style={{ color: 'red' }}
+            />
+            <div>
+              <Comment />
+            </div>
           </div>
         </div>
       </div>

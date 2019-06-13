@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing fetch Comments Component matches snapshot 1`] = `
+<Fragment>
+  <div
+    className="row content"
+  >
+    <div
+      className="col-md-12"
+    >
+      <div
+        className="input-field"
+      >
+        His name was my name too.
+        <br />
+        2019-05-16T15:22:04.375891Z
+        <br />
+        edna1
+      </div>
+      <div
+        className="input-field"
+      >
+        His name was my name too.
+        <br />
+        2019-05-16T15:22:04.375891Z
+        <br />
+        edna1
+      </div>
+    </div>
+  </div>
+</Fragment>
+`;
