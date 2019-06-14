@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import NavbarComponent from '../components/Navbar';
+import Articles from '../containers/articles/ArticlesContainer';
 
 class Home extends Component {
   render () {
     return (
       <React.Fragment>
         <NavbarComponent />
-        <img className="banner-img"
-          src={require("../../assets/images/ah_banner.png")}
-          alt="Banner" />
+        <Articles />
       </React.Fragment>
     );
   }

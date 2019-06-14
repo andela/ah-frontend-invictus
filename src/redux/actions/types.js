@@ -15,7 +15,8 @@ export const signupType = {
 
 export const articleTypes = {
   CREATE_ARTICLE_SUCCESS: 'CREATE_ARTICLE_SUCCESS',
-  CREATE_ARTICLE_FAIL: 'CREATE_ARTICLE_FAIL'
+  CREATE_ARTICLE_FAIL: 'CREATE_ARTICLE_FAIL',
+  FETCH_ARTICLE: 'FETCH_ARTICLE'
 };
 
 export const socialTypes = {
@@ -31,4 +32,8 @@ export const profileTypes = {
   PROFILE_VIEW_FAILED: 'PROFILE_VIEW_FAILD',
   EDIT_PROFILE: 'USER_REQUEST_EDIT',
   FAIL_EDIT: 'USER_FAIL_EDIT'
+};
+
+export const articlesTypes = {
+  FETCH_ARTICLES: 'FETCH_ARTICLES'
 };

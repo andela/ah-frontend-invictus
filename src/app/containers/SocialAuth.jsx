@@ -31,8 +31,7 @@ export class SocialAuthentication extends Component {
         <GoogleSocialAuth
           clientId="45687926143-vk1re0t33ljt0f46pr63gifaluq8q0sn.apps.googleusercontent.com"
           render={renderProps => (
-            <button className="fa fa-google" onClick={renderProps.onClick} disabled={renderProps.disabled}>
-            </button>
+            <button className="fa fa-google" onClick={renderProps.onClick} disabled={renderProps.disabled} />
           )}
           onSuccess={this.googleResponse}
           onFailure={this.googleResponse}

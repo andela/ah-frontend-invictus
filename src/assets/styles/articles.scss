@@ -1,0 +1,60 @@
+@import "./var";
+
+.articles-heading {
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.card-article-link:hover {
+  text-decoration: none;
+}
+
+.card-article {
+  background-color: $article-card-bacground;
+  color: $text-color;
+  margin: 15px;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-publish-date {
+  color: $text-color-secondary;
+  font-size: 13px;
+}
+
+.card-body-footer {
+  display: flex;
+}
+
+.card-footer-text {
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+.article-main {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 80px;
+}
+
+.article-title {
+  font-weight: bold;
+}
+
+.article-body {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.article-desc {
+  color: $text-color-secondary-second;
+  font-size: 26px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}

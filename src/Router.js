@@ -10,6 +10,7 @@ import SignupComponent from './app/containers/Signup';
 import ArticleContainer from './app/containers/ArticleContainer';
 import ProfileComponent from './app/containers/ProfileContainer';
 import editProfileComponent from './app/containers/editProfileContainer';
+import Article from './app/containers/articles/getArticleContainer';
 
 
 class Router extends Component {
@@ -25,6 +26,8 @@ class Router extends Component {
         <Route path="/articles/create" component={ArticleContainer} />
         <Route path="/profile" component={ProfileComponent} />
         <Route path="/editprofile" component={editProfileComponent} />
+        <Route exact path="/articles" component={HomePage} />
+        <Route exact path="/articles/:id" component={Article} />
       </BrowserRouter>
     );
   }
