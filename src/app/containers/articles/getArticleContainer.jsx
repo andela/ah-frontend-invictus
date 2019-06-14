@@ -28,6 +28,7 @@ export class Article extends Component {
         <GetArticleComponent articleId={articleId} {...this.props.article}
           handleLike={this.handleLike}
           handleDislike={this.handleDislike}
+          auth={this.props.auth}
         />
       </div>
     );
@@ -36,7 +37,8 @@ export class Article extends Component {
 
 
 export const mapStateToProps = state => ({
-  article: state.article
+  article: state.article,
+  auth: state.auth.login_success
 });
 
 Article.propTypes = {

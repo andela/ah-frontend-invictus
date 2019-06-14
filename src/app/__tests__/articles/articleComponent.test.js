@@ -8,8 +8,11 @@ const props = {
     title: 'Example Title',
     body: 'Some text',
     author: 'Test',
-    tagList:["edna"],
+    tagList: ["edna"],
     description: 'Test'
+  },
+  auth: {
+    username: "sanya"
   }
 };
 
