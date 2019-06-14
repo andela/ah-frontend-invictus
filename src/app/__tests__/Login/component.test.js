@@ -3,8 +3,6 @@ import toJson from 'enzyme-to-json';
 import { shallow } from 'enzyme';
 import Login from '../../components/Login';
 
-// Enzyme.configure({ adapter: new EnzymeAdapter() });
-
 describe('<Login />', () => {
   let wrapper;
   const props = {

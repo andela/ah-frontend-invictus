@@ -69,32 +69,16 @@ exports[`<SignupFormComponent/> matches snapshot 1`] = `
               className="row social-media-row"
             >
               <div
-                className="col-md-4 col-2"
+                className="col-md-1"
+              />
+              <div
+                className="col-md-10"
               >
-                <img
-                  alt="facebook-logo"
-                  className="socialmedia-img-signup"
-                  src="facebook.png"
-                />
+                <Connect(SocialAuthentication) />
               </div>
               <div
-                className="col-md-4 col-2"
-              >
-                <img
-                  alt="twitter-logo"
-                  className="socialmedia-img-signup twitter-img"
-                  src="twitter.png"
-                />
-              </div>
-              <div
-                className="col-md-4 col-2"
-              >
-                <img
-                  alt="google-logo"
-                  className="socialmedia-img-signup"
-                  src="google.png"
-                />
-              </div>
+                className="col-md-1"
+              />
             </div>
           </div>
           <p

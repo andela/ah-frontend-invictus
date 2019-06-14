@@ -1,0 +1,285 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`facebook social authentication matches snapshot 1`] = `
+SocialAuthentication {
+  "context": Object {},
+  "googleResponse": [Function],
+  "props": Object {
+    "onClick": [MockFunction],
+    "socialAuth": [MockFunction] {
+      "calls": Array [
+        Array [
+          undefined,
+          "facebook",
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    },
+    "store": Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    },
+  },
+  "refs": Object {},
+  "responseFacebook": [Function],
+  "setState": [Function],
+  "state": null,
+  "updater": Updater {
+    "_callbacks": Array [],
+    "_renderer": ReactShallowRenderer {
+      "_context": Object {},
+      "_didScheduleRenderPhaseUpdate": false,
+      "_dispatcher": Object {
+        "readContext": [Function],
+        "useCallback": [Function],
+        "useContext": [Function],
+        "useDebugValue": [Function],
+        "useEffect": [Function],
+        "useImperativeHandle": [Function],
+        "useLayoutEffect": [Function],
+        "useMemo": [Function],
+        "useReducer": [Function],
+        "useRef": [Function],
+        "useState": [Function],
+      },
+      "_element": <SocialAuthentication
+        onClick={[MockFunction]}
+        socialAuth={
+          [MockFunction] {
+            "calls": Array [
+              Array [
+                undefined,
+                "facebook",
+              ],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          }
+        }
+        store={
+          Object {
+            "clearActions": [Function],
+            "dispatch": [Function],
+            "getActions": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+          }
+        }
+      />,
+      "_firstWorkInProgressHook": null,
+      "_forcedUpdate": false,
+      "_instance": [Circular],
+      "_isReRender": false,
+      "_newState": null,
+      "_numberOfReRenders": 0,
+      "_renderPhaseUpdates": null,
+      "_rendered": <div
+        className="socialAuth"
+      >
+        <t
+          appId="349961962392067"
+          callback={[Function]}
+          cssClass="fa fa-facebook"
+          fields="name,email"
+          size="metro"
+          tag="button"
+          textButton={false}
+          typeButton="button"
+        />
+        <e
+          accessType="online"
+          buttonText="Sign in with Google"
+          clientId="45687926143-vk1re0t33ljt0f46pr63gifaluq8q0sn.apps.googleusercontent.com"
+          cookiePolicy="single_host_origin"
+          disabledStyle={
+            Object {
+              "opacity": 0.6,
+            }
+          }
+          fetchBasicProfile={true}
+          icon={true}
+          isSignedIn={false}
+          jsSrc="https://apis.google.com/js/api.js"
+          onFailure={[Function]}
+          onRequest={[Function]}
+          onSuccess={[Function]}
+          prompt=""
+          render={[Function]}
+          scope="profile email"
+          tag="button"
+          theme="light"
+          type="button"
+          uxMode="popup"
+        />
+      </div>,
+      "_rendering": false,
+      "_updater": [Circular],
+      "_workInProgressHook": null,
+    },
+  },
+}
+`;
+
+exports[`google social authentication matches snapshot 1`] = `
+SocialAuthentication {
+  "context": Object {},
+  "googleResponse": [Function],
+  "props": Object {
+    "onClick": [MockFunction],
+    "socialAuth": [MockFunction] {
+      "calls": Array [
+        Array [
+          undefined,
+          "facebook",
+        ],
+        Array [
+          undefined,
+          "google",
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    },
+    "store": Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    },
+  },
+  "refs": Object {},
+  "responseFacebook": [Function],
+  "setState": [Function],
+  "state": null,
+  "updater": Updater {
+    "_callbacks": Array [],
+    "_renderer": ReactShallowRenderer {
+      "_context": Object {},
+      "_didScheduleRenderPhaseUpdate": false,
+      "_dispatcher": Object {
+        "readContext": [Function],
+        "useCallback": [Function],
+        "useContext": [Function],
+        "useDebugValue": [Function],
+        "useEffect": [Function],
+        "useImperativeHandle": [Function],
+        "useLayoutEffect": [Function],
+        "useMemo": [Function],
+        "useReducer": [Function],
+        "useRef": [Function],
+        "useState": [Function],
+      },
+      "_element": <SocialAuthentication
+        onClick={[MockFunction]}
+        socialAuth={
+          [MockFunction] {
+            "calls": Array [
+              Array [
+                undefined,
+                "facebook",
+              ],
+              Array [
+                undefined,
+                "google",
+              ],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          }
+        }
+        store={
+          Object {
+            "clearActions": [Function],
+            "dispatch": [Function],
+            "getActions": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+          }
+        }
+      />,
+      "_firstWorkInProgressHook": null,
+      "_forcedUpdate": false,
+      "_instance": [Circular],
+      "_isReRender": false,
+      "_newState": null,
+      "_numberOfReRenders": 0,
+      "_renderPhaseUpdates": null,
+      "_rendered": <div
+        className="socialAuth"
+      >
+        <t
+          appId="349961962392067"
+          callback={[Function]}
+          cssClass="fa fa-facebook"
+          fields="name,email"
+          size="metro"
+          tag="button"
+          textButton={false}
+          typeButton="button"
+        />
+        <e
+          accessType="online"
+          buttonText="Sign in with Google"
+          clientId="45687926143-vk1re0t33ljt0f46pr63gifaluq8q0sn.apps.googleusercontent.com"
+          cookiePolicy="single_host_origin"
+          disabledStyle={
+            Object {
+              "opacity": 0.6,
+            }
+          }
+          fetchBasicProfile={true}
+          icon={true}
+          isSignedIn={false}
+          jsSrc="https://apis.google.com/js/api.js"
+          onFailure={[Function]}
+          onRequest={[Function]}
+          onSuccess={[Function]}
+          prompt=""
+          render={[Function]}
+          scope="profile email"
+          tag="button"
+          theme="light"
+          type="button"
+          uxMode="popup"
+        />
+      </div>,
+      "_rendering": false,
+      "_updater": [Circular],
+      "_workInProgressHook": null,
+    },
+  },
+}
+`;
