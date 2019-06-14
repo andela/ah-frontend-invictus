@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProfileContainer/> renders without fail 1`] = `ShallowWrapper {}`;

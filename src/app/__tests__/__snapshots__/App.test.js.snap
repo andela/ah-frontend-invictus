@@ -12,35 +12,52 @@ exports[`<App /> matches snapshot 1`] = `
     }
   }
 >
-  <ToastContainer
-    autoClose={5000}
-    bodyClassName={null}
-    className={null}
-    closeButton={
-      <CloseButton
-        ariaLabel="close"
-      />
+  <PersistGate
+    loading={null}
+    persistor={
+      Object {
+        "dispatch": [Function],
+        "flush": [Function],
+        "getState": [Function],
+        "pause": [Function],
+        "persist": [Function],
+        "purge": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
     }
-    closeOnClick={true}
-    draggable={true}
-    draggablePercent={80}
-    hideProgressBar={false}
-    newestOnTop={false}
-    pauseOnFocusLoss={true}
-    pauseOnHover={true}
-    position="top-right"
-    progressClassName={null}
-    progressStyle={null}
-    role="alert"
-    rtl={false}
-    style={null}
-    toastClassName={null}
-    transition={[Function]}
-  />
-  <div
-    className="App"
   >
-    <Router />
-  </div>
+    <div
+      className="App"
+    >
+      <Router />
+      <ToastContainer
+        autoClose={5000}
+        bodyClassName={null}
+        className={null}
+        closeButton={
+          <CloseButton
+            ariaLabel="close"
+          />
+        }
+        closeOnClick={true}
+        draggable={true}
+        draggablePercent={80}
+        hideProgressBar={false}
+        newestOnTop={false}
+        pauseOnFocusLoss={true}
+        pauseOnHover={true}
+        position="top-right"
+        progressClassName={null}
+        progressStyle={null}
+        role="alert"
+        rtl={false}
+        style={null}
+        toastClassName={null}
+        transition={[Function]}
+      />
+    </div>
+  </PersistGate>
 </Provider>
 `;

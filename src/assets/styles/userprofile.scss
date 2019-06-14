@@ -1,0 +1,64 @@
+@import "./var";
+
+.profile-image {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+
+.image-div {
+  padding: 50px;
+}
+
+.button {
+  background-color: $main-color;
+  border: 1px solid $main-color;
+  border-radius: 0.3em;
+  color: $background-color;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.edit-button {
+  background-color: $main-color;
+  border: 1px solid $main-color;
+  border-radius: 0.3em;
+  color: $background-color;
+  padding: 10px;
+  width: 300%;
+}
+
+.upload-button {
+  background-color: $main-color;
+  border-radius: 0.2em;
+  color: $uploadbutton;
+}
+
+.card-profile {
+  height: 8%;
+  margin: 2px;
+  width: 18rem;
+}
+
+.all-articles {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1%;
+  padding: 2%;
+}
+
+.user-details {
+  margin-bottom: 15px;
+  margin-right: 25%;
+  margin-top: 90px;
+  text-align: center;
+
+  .username {
+    color: $username-color;
+    font-family: "Courier New";
+    font-size: 52px;
+    font-style: italic;
+  }
+
+}

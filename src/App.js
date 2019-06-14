@@ -1,18 +1,23 @@
 import React, { Component } from "react";
 import { Provider } from "react-redux";
-import store from "./redux/store";
+
+import { PersistGate } from 'redux-persist/integration/react';
+import configureStore from "./redux/store";
 import Router from "./Router";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+const { persistor, store } = configureStore();
 class App extends Component {
   render () {
     return (
       <Provider store={store}>
-        <ToastContainer/>
-        <div className="App">
-          <Router />
-        </div>
+        <PersistGate persistor={persistor}>
+          <div className="App">
+            <Router />
+            <ToastContainer />
+          </div>
+        </PersistGate>
       </Provider>
     );
   }
