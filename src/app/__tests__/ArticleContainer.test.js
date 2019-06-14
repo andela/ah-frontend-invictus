@@ -9,13 +9,16 @@ describe('Article container', () => {
   let instance;
   beforeEach(() => {
     props = {
+      handleAddTag: jest.fn(),
       handleSubmit: jest.fn(),
       handleChange: jest.fn(),
+      handleDeleteTag: jest.fn(),
       checkBlank: jest.fn(),
       postArticle: jest.fn(),
       title: "Town hall at Andela",
       body: "There was lots of fun and cake",
       description: "There was no TIA chant",
+      tagList:[ { id: 'edna', text: 'edna' } , { id: 'food', text: 'food' } ],
       toast: {
         error: jest.fn()
       }
@@ -36,6 +39,7 @@ describe('Article container', () => {
     const e = {
       preventDefault: jest.fn()
     };
+    instance.setState(props);
     instance.handleSubmit(e);
     expect(props.postArticle).toHaveBeenCalledTimes(1);
   });
@@ -47,5 +51,18 @@ describe('Article container', () => {
       }
     };
     instance.handleChange(e);
+  });
+
+  it('should handle tag addition',()=>{
+    const tag = {id: "edna", text: "edna"}
+    instance.handleAddTag(tag)
+    expect(props.handleAddTag).toHaveBeenCalledTimes(0);
+  });
+
+  it('should handle tag deletion',()=>{
+    instance.setState(props);
+    instance.handleDeleteTag(0);
+    expect(wrapper.state('tagList'))
+    .toEqual([{ id: 'food', text: 'food' }]);
   });
 });

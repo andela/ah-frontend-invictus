@@ -8,6 +8,7 @@ const props = {
     title: 'Example Title',
     body: 'Some text',
     author: 'Test',
+    tagList:["edna"],
     description: 'Test'
   }
 };

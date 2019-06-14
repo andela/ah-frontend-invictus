@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../../components/Navbar';
 
 const ArticleComponent = (props) => {
-  const { article: { title, body, author, description }, handleLike, handleDislike } = props;
+  const { article: { title, body, author, description, tagList = [] }, handleLike, handleDislike } = props;
   return (
     <div>
       <Navbar />
@@ -14,12 +14,13 @@ const ArticleComponent = (props) => {
           <img className="card-image" alt="" src="https://picsum.photos/600/300" />
           <div className="article-body">{body}</div>
           <div className="like-dislike">
+            <i className="fa fa-thumbs-up" onClick={handleLike} role="presentation"
+              style={{ color: 'blue', marginRight: '10px' }} />
             <i
-              className="far fa-thumbs-up" onClick={handleLike} role="presentation"
-              style={{ color: 'blue', marginRight: '10px' }}/>
-            <i
-              className="far fa-thumbs-down" onClick={handleDislike} role="presentation" style={{ color: 'red' }}
-            />
+              className="fa fa-thumbs-down" onClick={handleDislike} role="presentation" style={{ color: 'red' }}
+            /></div>
+          <div className="all-tags"><hr />
+            <ul>{tagList.map(tag => <li key={tag} className="tag">{tag}</li>)}</ul>
           </div>
         </div>
       </div>

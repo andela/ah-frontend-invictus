@@ -16,10 +16,10 @@ const ArticlesComponent = (props) => {
           <div className="card-body-likes-dislikes">
             <p className="card-body-likes-text">Likes: {' '}{article.likes_count}</p>
             <p className="card-body-dislikes-text">Dislikes: {' '}{article.dislikes_count}</p></div>
-        </div>
-      </div>
-    </Link>
-  ));
+          <div className="all-tags"><hr />
+            <ul>{article.tagList.map(tag => <li key={tag} className="tag">{tag}</li>)}</ul></div>
+        </div></div>
+    </Link>));
   return (
     <div>
       <div className="container">

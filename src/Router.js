@@ -23,7 +23,7 @@ class Router extends Component {
         <Route path="/password/reset" component={RequestResetPassword} />
         <Route path="/resetpassword/:token" component={ResetPassword} />
         <Route path="/signup" component={SignupComponent} />
-        <Route path="/articles/create" component={ArticleContainer} />
+        <Route exact path="/create" component={ArticleContainer} />
         <Route path="/profile" component={ProfileComponent} />
         <Route path="/editprofile" component={editProfileComponent} />
         <Route exact path="/articles" component={HomePage} />

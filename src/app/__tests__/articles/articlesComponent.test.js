@@ -12,6 +12,7 @@ const props = {
         title: 'Test',
         description: 'Test',
         author: 'Test',
+        tagList:["edna"],
         read_time: 'Test'
       }]
     }

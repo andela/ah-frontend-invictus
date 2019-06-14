@@ -6,13 +6,15 @@ import { postArticle } from '../../redux/actions/ArticleActions';
 import { articleUrl } from '../utils';
 import PropTypes from 'prop-types';
 
+
 export class ArticleContainer extends Component {
   state = {
     title: "",
     description: "",
     body: "",
-    tagList: ["tags"]
+    tagList: []
   };
+
 
   checkBlank = () => {
     const { title, body, description } = this.state;
@@ -25,6 +27,18 @@ export class ArticleContainer extends Component {
     }
   };
 
+  handleAddTag = (tag) => {
+    this.setState(state => ({ tagList: [...state.tagList, tag] }));
+  }
+
+  handleDeleteTag = (i) => {
+    const { tagList } = this.state;
+    this.setState({
+      tagList: tagList.filter((tag, index) => index !== i)
+    });
+  }
+
+
   handleChange = (event) => {
     this.setState({
       [event.target.name]: event.target.value
@@ -33,7 +47,9 @@ export class ArticleContainer extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     const { title, body, description, tagList } = this.state;
-    const articleDetails = { title, body, description, tagList };
+    let newTags = [];
+    tagList.map(tag => newTags.push(tag.text));
+    const articleDetails = { title, body, description, tagList: newTags };
     this.checkBlank();
     var headers = {};
     headers['Content-Type'] = 'application/json';
@@ -47,6 +63,9 @@ export class ArticleContainer extends Component {
       <ArticlePresentationComponent
         handleSubmit={this.handleSubmit}
         handleChange={this.handleChange}
+        handleAddTag={this.handleAddTag}
+        handleDeleteTag={this.handleDeleteTag}
+        tags={this.state.tagList}
       />
     );
   }

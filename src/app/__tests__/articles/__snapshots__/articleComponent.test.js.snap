@@ -36,7 +36,7 @@ exports[`article component matches snapshot 1`] = `
         className="like-dislike"
       >
         <i
-          className="far fa-thumbs-up"
+          className="fa fa-thumbs-up"
           role="presentation"
           style={
             Object {
@@ -46,7 +46,7 @@ exports[`article component matches snapshot 1`] = `
           }
         />
         <i
-          className="far fa-thumbs-down"
+          className="fa fa-thumbs-down"
           role="presentation"
           style={
             Object {
@@ -54,6 +54,19 @@ exports[`article component matches snapshot 1`] = `
             }
           }
         />
+      </div>
+      <div
+        className="all-tags"
+      >
+        <hr />
+        <ul>
+          <li
+            className="tag"
+            key="edna"
+          >
+            edna
+          </li>
+        </ul>
       </div>
     </div>
   </div>
