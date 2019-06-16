@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`article component matches snapshot 1`] = `
+<div>
+  <Connect(NavbarComponent) />
+  <div
+    className="container"
+  >
+    <div
+      className="article-main"
+    >
+      <h1
+        className="article-title"
+      >
+        Example Title
+      </h1>
+      <div
+        className="article-desc"
+      >
+        Test
+      </div>
+      <div>
+        Test
+      </div>
+      <img
+        alt=""
+        className="card-image"
+        src="https://picsum.photos/600/300"
+      />
+      <div
+        className="article-body"
+      >
+        Some text
+      </div>
+    </div>
+  </div>
+</div>
+`;

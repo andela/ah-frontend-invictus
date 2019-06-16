@@ -3,10 +3,6 @@
 exports[`<Home /> matches snapshot 1`] = `
 <Fragment>
   <Connect(NavbarComponent) />
-  <img
-    alt="Banner"
-    className="banner-img"
-    src="ah_banner.png"
-  />
+  <Connect(Articles) />
 </Fragment>
 `;

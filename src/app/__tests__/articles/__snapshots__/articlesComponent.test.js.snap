@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`articles component matches snapshot 1`] = `
+<div>
+  <div
+    className="container"
+  >
+    <h2
+      className="articles-heading"
+    >
+      Recent Articles
+    </h2>
+    <hr />
+    <div
+      className="row"
+    >
+      <Link
+        className="card-article-link"
+        key="1"
+        to="/articles/1"
+      >
+        <div
+          className="card-article"
+          style={
+            Object {
+              "width": "21.85rem",
+            }
+          }
+        >
+          <img
+            alt=""
+            className="card-image"
+            src="https://picsum.photos/600/350"
+          />
+          <div
+            className="card-body"
+          >
+            <div>
+              <p
+                className="card-publish-date"
+              >
+                Published On: 
+                Test
+              </p>
+            </div>
+            <h4
+              className="card-title"
+            >
+              Test
+            </h4>
+            <p
+              className="card-text"
+            >
+              Test
+            </p>
+            <div
+              className="card-body-footer"
+            >
+              <p
+                className="card-footer-text"
+              >
+                @
+                Test
+              </p>
+              <p
+                className="card-footer-text"
+              >
+                Test
+              </p>
+            </div>
+          </div>
+        </div>
+      </Link>
+    </div>
+  </div>
+</div>
+`;

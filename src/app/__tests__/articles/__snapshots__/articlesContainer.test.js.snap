@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fetch articles should render correctly 1`] = `
+<div>
+  <ArticlesComponent
+    state={
+      Object {
+        "ArticlesReducer": Object {
+          "articles": Array [],
+        },
+        "fetchArticles": [MockFunction] {
+          "calls": Array [
+            Array [],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": undefined,
+            },
+          ],
+        },
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+      }
+    }
+  />
+</div>
+`;
