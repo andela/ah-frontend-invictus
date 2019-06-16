@@ -10,6 +10,7 @@ export class Article extends Component {
     const articleId = this.props.match.params.id;
     this.props.fetchArticle(articleId);
   }
+
   handleLike = () => {
     const articleId = this.props.match.params.id;
     this.props.likeArticle(articleId, this.props);

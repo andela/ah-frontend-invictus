@@ -1,9 +1,9 @@
 import React from 'react';
 import Navbar from '../../components/Navbar';
-import Comment from '../Comment';
+import CommentContainer from '../../containers/CommentContainer';
 
 const ArticleComponent = (props) => {
-  const { article: { title, body, author, description, tagList = [] }, handleLike, handleDislike } = props;
+  const { articleId, article: { title, body, author, description, tagList = [] }, handleLike, handleDislike } = props;
   return (
     <div>
       <Navbar />
@@ -28,7 +28,7 @@ const ArticleComponent = (props) => {
               className="far fa-thumbs-down" onClick={handleDislike} role="presentation" style={{ color: 'red' }}
             />
             <div>
-              <Comment />
+              <CommentContainer articleId={articleId} />
             </div>
           </div>
         </div>
@@ -36,5 +36,4 @@ const ArticleComponent = (props) => {
     </div>
   );
 };
-
 export default ArticleComponent;

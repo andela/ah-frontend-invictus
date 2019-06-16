@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { toast } from 'react-toastify';
 import Comment from '../../app/components/Comment';
@@ -16,9 +17,16 @@ export class CommentContainer extends Component {
     };
   }
   componentDidMount () {
-    const { fetchComments } = this.props;
-    fetchComments();
+    const { fetchComments, articleId } = this.props;
+    console.log(articleId);
+    fetchComments(articleId);
   }
+
+
+  // componentDidMount () {
+  //   const articleId = this.props.match.params.id;
+  //   this.props.fetchComment(articleId)
+  // }
 
   componentWillReceiveProps = (nextProps) => {
     if (nextProps.comments) {
@@ -42,21 +50,22 @@ export class CommentContainer extends Component {
     });
   };
   handleSubmit = (event) => {
-    const { postComment } = this.props;
     event.preventDefault();
-
-    const commentBody = this.state;
-    const commentDetails = commentBody.body;
+    // const { postComment } = this.props;
+    const { commentBody } = this.state;
+    // const commentDetails = commentBody.body;
 
     var headers = {};
     headers['Content-Type'] = 'application/json';
     headers['Authorization'] = `Bearer ${localStorage.getItem('user_token')}`;
-    this.emptyBody(commentDetails);
-    postComment(commentDetails);
+    this.emptyBody(commentBody);
+    this.props.postComment(2, commentBody);
   };
 
   render () {
+    console.log(this.state.displayComment);
     return (
+
       <React.Fragment>
         <Comment
           handleSubmit={this.handleSubmit}
@@ -64,13 +73,17 @@ export class CommentContainer extends Component {
         />
         <FetchComment comments={this.state.displayComment} />
       </React.Fragment>
-
-
     );
   }
 }
+
 export const mapStateToProps = state => ({
   comment: state.postComment,
-  comments: state.fetchComment
+  comments: state.fetchComment.comments
 });
+
+CommentContainer.propTypes = {
+  fetchComment: PropTypes.func
+};
+
 export default connect(mapStateToProps, { postComment, fetchComments })(CommentContainer);

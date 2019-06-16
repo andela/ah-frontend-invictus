@@ -4,7 +4,9 @@ import { commentTypes } from './types';
 import { commentUrl } from './commentUrl';
 
 let auth = localStorage.getItem('user_token');
-export const postComment = (articleId, commentDetails) => dispatch =>
+export const postComment = (articleId, commentDetails) => dispatch => {
+  // console.log(articleId, commentDetails);
+  console.log(commentDetails);
   axios.post(commentUrl(articleId),
     {
       comment: {
@@ -16,6 +18,7 @@ export const postComment = (articleId, commentDetails) => dispatch =>
     { headers: { Authorization: `Bearer ${auth}` } })
     .then(response => {
       const { status } = response;
+      console.log(response.data);
       if (status === 201) {
         dispatch({
           type: commentTypes.CREATE_COMMENTS,
@@ -39,4 +42,5 @@ export const postComment = (articleId, commentDetails) => dispatch =>
       });
     }
     );
+};
 

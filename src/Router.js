@@ -29,7 +29,7 @@ class Router extends Component {
         <Route path="/editprofile" component={editProfileComponent} />
         <Route exact path="/articles" component={HomePage} />
         <Route exact path="/articles/:id" component={Article} />
-        <Route path="/articles/comment" component={CommentContainer} />
+        {/* <Route path="/articles/comment" component={CommentContainer} /> */}
       </BrowserRouter>
     );
   }

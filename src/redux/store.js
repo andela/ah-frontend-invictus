@@ -13,7 +13,7 @@ const persistConfig = {
   whitelist: ['profile']
 };
 const persistedReducer = persistReducer(persistConfig, rootReducer);
-const middleware = [thunk, logger];
+const middleware = [thunk];
 
 const configureStore = () => {
   const store = createStore(

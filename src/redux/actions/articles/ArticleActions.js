@@ -10,6 +10,7 @@ const fetchArticle = (id) => dispatch => {
   })
 
     .then(response => {
+      console.log(response.data.article);
       dispatch({
         type: articleTypes.FETCH_ARTICLE,
         payload: response.data.article

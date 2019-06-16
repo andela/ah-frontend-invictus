@@ -6,7 +6,8 @@
     "jest": true
   },
   "rules": {
-    "no-console": "error",
+    "no-console": "warn",
+    "no-unused-vars": "off",
     "indent": [2, 2]
   }
 }

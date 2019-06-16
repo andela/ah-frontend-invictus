@@ -4,6 +4,7 @@ import '../../assets/styles/login.scss';
 import '../../assets/styles/fetchcomment.scss';
 
 const FetchComment = ({ comments }) => {
+  console.log(comments);
   return (
     <>
       <div className="row content">
