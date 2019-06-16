@@ -4,7 +4,6 @@ import { commentUrl } from './commentUrl';
 
 let authToken = localStorage.getItem('user_token');
 export const fetchComments = (articleId) => dispatch => {
-  // console.log(authToken);
   return axios.get(commentUrl(articleId),
     {
       headers: { Authorization: `Bearer ${authToken}` }

@@ -22,9 +22,10 @@ export class Article extends Component {
   };
 
   render () {
+    const articleId = this.props.match.params.id;
     return (
       <div>
-        <GetArticleComponent {...this.props.article}
+        <GetArticleComponent articleId={articleId} {...this.props.article}
           handleLike={this.handleLike}
           handleDislike={this.handleDislike}
         />

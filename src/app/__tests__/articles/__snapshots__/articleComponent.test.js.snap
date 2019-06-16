@@ -32,7 +32,6 @@ exports[`article component matches snapshot 1`] = `
       >
         Some text
       </div>
-<<<<<<< HEAD
       <div
         className="like-dislike"
       >
@@ -55,10 +54,6 @@ exports[`article component matches snapshot 1`] = `
             }
           }
         />
-=======
-      <div>
-        <Comment />
->>>>>>> ft(comment): Add timestamped comments to any article
       </div>
       <div
         className="all-tags"
@@ -72,6 +67,9 @@ exports[`article component matches snapshot 1`] = `
             edna
           </li>
         </ul>
+        <div>
+          <Connect(CommentContainer) />
+        </div>
       </div>
     </div>
   </div>

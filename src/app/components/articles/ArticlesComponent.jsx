@@ -29,5 +29,4 @@ const ArticlesComponent = (props) => {
     </div>
   );
 };
-
 export default ArticlesComponent;

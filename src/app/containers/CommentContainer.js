@@ -18,15 +18,8 @@ export class CommentContainer extends Component {
   }
   componentDidMount () {
     const { fetchComments, articleId } = this.props;
-    console.log(articleId);
     fetchComments(articleId);
   }
-
-
-  // componentDidMount () {
-  //   const articleId = this.props.match.params.id;
-  //   this.props.fetchComment(articleId)
-  // }
 
   componentWillReceiveProps = (nextProps) => {
     if (nextProps.comments) {
@@ -49,21 +42,20 @@ export class CommentContainer extends Component {
       [event.target.name]: event.target.value
     });
   };
-  handleSubmit = (event) => {
-    event.preventDefault();
-    // const { postComment } = this.props;
-    const { commentBody } = this.state;
-    // const commentDetails = commentBody.body;
 
+  handleSubmit = (event) => {
+    const { articleId } = this.props;
+    event.preventDefault();
+    const { commentBody } = this.state;
     var headers = {};
     headers['Content-Type'] = 'application/json';
     headers['Authorization'] = `Bearer ${localStorage.getItem('user_token')}`;
     this.emptyBody(commentBody);
-    this.props.postComment(2, commentBody);
+    this.props.postComment(articleId, commentBody);
   };
 
   render () {
-    console.log(this.state.displayComment);
+    const { comments } = this.props;
     return (
 
       <React.Fragment>
@@ -71,7 +63,7 @@ export class CommentContainer extends Component {
           handleSubmit={this.handleSubmit}
           handleChange={this.handleChange}
         />
-        <FetchComment comments={this.state.displayComment} />
+        <FetchComment comments={comments} />
       </React.Fragment>
     );
   }

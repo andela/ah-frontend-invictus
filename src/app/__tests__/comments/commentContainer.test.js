@@ -40,7 +40,7 @@ describe('Testing Comment Container', () => {
               value: 'abc'
             }
           };
-    const commentBody = undefined;
+    const commentBody = "";
     const instance = wrapper.instance();
     const emptyBody = jest.spyOn(instance, 'emptyBody');
     instance.handleSubmit({preventDefault: jest.fn()});

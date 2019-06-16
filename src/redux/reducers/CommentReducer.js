@@ -8,7 +8,6 @@ const initialState = {
 export default function (state = initialState, action) {
   switch (action.type) {
   case commentTypes.CREATE_COMMENTS:
-    console.log(action.payload);
     return {
       ...state,
       comments: action.payload

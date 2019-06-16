@@ -11,7 +11,6 @@ import ArticleContainer from './app/containers/ArticleContainer';
 import ProfileComponent from './app/containers/ProfileContainer';
 import editProfileComponent from './app/containers/editProfileContainer';
 import Article from './app/containers/articles/getArticleContainer';
-import CommentContainer from './app/containers/CommentContainer';
 
 
 class Router extends Component {
@@ -29,7 +28,6 @@ class Router extends Component {
         <Route path="/editprofile" component={editProfileComponent} />
         <Route exact path="/articles" component={HomePage} />
         <Route exact path="/articles/:id" component={Article} />
-        {/* <Route path="/articles/comment" component={CommentContainer} /> */}
       </BrowserRouter>
     );
   }

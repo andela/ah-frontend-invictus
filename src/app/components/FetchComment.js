@@ -4,7 +4,6 @@ import '../../assets/styles/login.scss';
 import '../../assets/styles/fetchcomment.scss';
 
 const FetchComment = ({ comments }) => {
-  console.log(comments);
   return (
     <>
       <div className="row content">
@@ -30,8 +29,12 @@ const FetchComment = ({ comments }) => {
 };
 
 FetchComment.propTypes = {
-  comment: PropTypes.string
+  comment: PropTypes.string,
+  comments: PropTypes.array
+};
+
+FetchComment.defaultProps = {
+  comments: []
 };
 
 export default FetchComment;
-
