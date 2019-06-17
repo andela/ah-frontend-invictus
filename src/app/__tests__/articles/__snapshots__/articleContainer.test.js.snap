@@ -2,6 +2,9 @@
 
 exports[`fetch article should render correctly 1`] = `
 <div>
-  <ArticleComponent />
+  <ArticleComponent
+    handleDislike={[Function]}
+    handleLike={[Function]}
+  />
 </div>
 `;

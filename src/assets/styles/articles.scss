@@ -58,3 +58,16 @@
   margin-bottom: 20px;
   margin-top: 20px;
 }
+
+.card-body-likes-dislikes {
+  display: flex;
+}
+
+.card-body-likes-text {
+  color: $text-like-color;
+  padding-right: 10px;
+}
+
+.card-body-dislikes-text {
+  color: $text-dislike-color;
+}

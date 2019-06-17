@@ -15,7 +15,7 @@ const props = {
     }
   },
   match: {params: {articleId:7}},
-  fetchArticle: jest.fn(),
+  fetchArticle: jest.fn()
 };
 
 describe('fetch article', () => {
@@ -37,5 +37,45 @@ describe('fetch article', () => {
   it('testing mapStateToProps', () => {
     const initialState = {article: {}};
     expect(mapStateToProps(initialState)).toEqual({article: {}});
+  });
+  
+
+});
+
+describe('Article like dislike container container', () => {
+  let props;
+  let instance;
+  let wrapper;
+  beforeEach(() => {
+    props = {
+      getArticleReducer: {
+        article: {
+          body: 'body'
+        }
+      },
+      match: {params: {articleId:7}},
+      fetchArticle: jest.fn(),
+      handleLike: jest.fn(),
+      likeArticle: jest.fn(),
+      handleDislike: jest.fn(),
+      dislikeArticle: jest.fn(),
+
+      toast: {
+        error: jest.fn()
+      }
+    };
+    wrapper = shallow(<Article {...props}/>);
+    instance = wrapper.instance();
+  });
+
+
+
+  it('handles like', () => {
+    instance.handleLike();
+    expect(props.likeArticle).toHaveBeenCalledTimes(1);
+  });
+  it('handles dislike', () => {
+    instance.handleDislike();
+    expect(props.dislikeArticle).toHaveBeenCalledTimes(1);
   });
 });
