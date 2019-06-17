@@ -9,7 +9,8 @@ import rootReducer from './rootReducer';
 const initialState = {};
 const persistConfig = {
   key: 'root',
-  storage
+  storage,
+  whitelist: ['profile']
 };
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 const middleware = [thunk, logger];
