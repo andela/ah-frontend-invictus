@@ -2,7 +2,10 @@
 
 exports[`Article container renders without crashing 1`] = `
 <ArticlePresentationComponent
+  handleAddTag={[Function]}
   handleChange={[Function]}
+  handleDeleteTag={[Function]}
   handleSubmit={[Function]}
+  tags={Array []}
 />
 `;

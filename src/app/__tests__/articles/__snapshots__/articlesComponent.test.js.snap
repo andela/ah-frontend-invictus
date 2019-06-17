@@ -84,6 +84,19 @@ exports[`articles component matches snapshot 1`] = `
                  
               </p>
             </div>
+            <div
+              className="all-tags"
+            >
+              <hr />
+              <ul>
+                <li
+                  className="tag"
+                  key="edna"
+                >
+                  edna
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </Link>

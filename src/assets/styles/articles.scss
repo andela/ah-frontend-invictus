@@ -71,3 +71,18 @@
 .card-body-dislikes-text {
   color: $text-dislike-color;
 }
+
+ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.tag {
+  background-color: $tag-background-color;
+  border-radius: 4px;
+  color: $background-color;
+  display: inline;
+  margin-right: 3%;
+  padding: 5px 10px;
+  text-align: center;
+}

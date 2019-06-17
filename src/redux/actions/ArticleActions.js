@@ -10,20 +10,24 @@ export const postArticle = (articleUrl, articleDetails, headers, props) => dispa
       dispatch({ type: articleTypes.CREATE_ARTICLE_SUCCESS, payload: response.data });
       toast.dismiss();
       toast.success("You have created the article", {
-        hideProgressBar: false, autoClose: 3000 });
+        hideProgressBar: false, autoClose: 3000
+      });
+      document.location.href = '/';
     }
-  }).catch((error) => {
-    if (error.response.status === 403) {
-      dispatch({ type: articleTypes.CREATE_ARTICLE_FAIL, payload: error.response.data });
-      toast.dismiss();
-      toast.error("The token has expired, please login again.", {
-        hideProgressBar: false, autoClose: 3000 });
-      props.history.push('/login');
+  })
+    .catch((error) => {
+      if (error.response.status === 403) {
+        dispatch({ type: articleTypes.CREATE_ARTICLE_FAIL, payload: error.response.data });
+        toast.dismiss();
+        toast.error("The token has expired, please login again.", {
+          hideProgressBar: false, autoClose: 3000
+        });
+        props.history.push('/login');
+      }
     }
-  }
-  );
+    );
 
-function actionDispatch (dispatch, response, message, type) {
+function actionDispatch(dispatch, response, message, type) {
   dispatch({ type: type, payload: response.data });
   toast.dismiss();
   toast.success(message, {
@@ -34,9 +38,11 @@ function actionDispatch (dispatch, response, message, type) {
 
 export const likeArticle = (articleId, props) => dispatch => {
   const body = {};
-  const headers = { headers: {
-    Authorization: `Bearer ${localStorage.getItem("user_token")}`
-  } };
+  const headers = {
+    headers: {
+      Authorization: `Bearer ${localStorage.getItem("user_token")}`
+    }
+  };
   return axios.post(`https://inviticus-staging.herokuapp.com/api/articles/${articleId}/like/`, body, headers)
     .then(response => {
       if (response.data.success === "You have successfully liked this article.") {
@@ -62,8 +68,11 @@ export const likeArticle = (articleId, props) => dispatch => {
 
 export const dislikeArticle = (articleId, props) => dispatch => {
   const body = {};
-  const headers = { headers: {
-    Authorization: `Bearer ${localStorage.getItem("user_token")}` } };
+  const headers = {
+    headers: {
+      Authorization: `Bearer ${localStorage.getItem("user_token")}`
+    }
+  };
 
   return axios.post(`https://inviticus-staging.herokuapp.com/api/articles/${articleId}/dislike/`, body, headers)
     .then(response => {

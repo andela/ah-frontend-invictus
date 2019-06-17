@@ -90,7 +90,8 @@ exports[`<Router /> matches snapshot 1`] = `
         "type": [Function],
       }
     }
-    path="/articles/create"
+    exact={true}
+    path="/create"
   />
   <Route
     component={
