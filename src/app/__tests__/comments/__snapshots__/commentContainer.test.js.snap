@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Comment Container matches snapshot 1`] = `
+<Fragment>
+  <Comment
+    handleChange={[Function]}
+    handleSubmit={[Function]}
+  />
+  <FetchComment
+    comments={Array []}
+  />
+</Fragment>
+`;

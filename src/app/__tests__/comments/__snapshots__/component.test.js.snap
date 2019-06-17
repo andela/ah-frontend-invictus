@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Comment /> matches snapshot 1`] = `
+<div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-5"
+    />
+    <form>
+      <label>
+        Comment
+      </label>
+      <textarea
+        className="form-control input-field"
+        id="CommentBody"
+        name="commentBody"
+        placeholder="Enter your Comments"
+      />
+      <input
+        className="btn btn-primary login-btn"
+        type="submit"
+      />
+    </form>
+  </div>
+</div>
+`;

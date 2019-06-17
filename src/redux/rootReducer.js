@@ -9,6 +9,8 @@ import articlesReducer from './reducers/ArticlesReducer';
 import getArticleReducer from './reducers/getArticleReducer';
 import likeArticleReducers from './reducers/likeArticleReducers';
 import dislikeArticleReducers from './reducers/dislikeArticleReducers';
+import CommentReducer from '../redux/reducers/CommentReducer';
+import FetchCommentReducer from '../redux/reducers/FetchCommentReducer';
 
 export default combineReducers({
   signup: signupReducer,
@@ -20,5 +22,7 @@ export default combineReducers({
   articles: articlesReducer,
   article: getArticleReducer,
   likeArticleReducers: likeArticleReducers,
-  dislikeArticleReducers: dislikeArticleReducers
+  dislikeArticleReducers: dislikeArticleReducers,
+  postComment: CommentReducer,
+  fetchComment: FetchCommentReducer
 });

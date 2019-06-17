@@ -67,6 +67,9 @@ exports[`article component matches snapshot 1`] = `
             edna
           </li>
         </ul>
+        <div>
+          <Connect(CommentContainer) />
+        </div>
       </div>
     </div>
   </div>
