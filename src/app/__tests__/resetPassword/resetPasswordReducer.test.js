@@ -1,10 +1,18 @@
 import reducer from '../../../redux/reducers/resetPasswordReducer';
-import { resetpassword } from '../../../redux/actions/types';
+import RateArticle from '../../../redux/reducers/rateArticle';
+import { resetpassword, rateArticleTypes } from '../../../redux/actions/types';
 
 describe('ResetPassword reducer', () => {
   it('should return default state', () => {
     const newState = reducer(undefined, {});
     expect(newState).toEqual({});
+  });
+  describe('should return rating', () => {
+    const newState = RateArticle(undefined, {
+      type: rateArticleTypes.RATE_ARTICLE,
+      payload: {message: "message"}
+    });
+    expect(newState).toEqual({message: "message", changed: true});
   });
   describe('On Success', () => {
     let newState;

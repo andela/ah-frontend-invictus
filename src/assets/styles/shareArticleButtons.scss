@@ -1,0 +1,38 @@
+$black: #000000;
+$white: #ffffff;
+
+.shareicons {
+  font-size: xx-large;
+  margin-right: 5%;
+  width: 70px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.toolstip {
+  display: inline-block;
+
+  .toolstiptext {
+    left: 105%;
+    padding: 5px 0;
+    position: absolute;
+    top: -5px;
+    visibility: hidden;
+    width: 120px;
+    z-index: 1;
+  }
+}
+
+.toolstip:hover .toolstiptext {
+  visibility: visible;
+}
+
+.toolstiptext {
+  background-color: $black;
+  border-radius: 6px;
+  color: $white;
+  font-size: small;
+  height: 30px;
+}

@@ -8,7 +8,6 @@ const props = {
     title: 'Example Title',
     body: 'Some text',
     author: 'Test',
-    tagList: ["edna"],
     description: 'Test'
   },
   auth: {
@@ -17,6 +16,16 @@ const props = {
 };
 
 describe('article component', () => {
+  let wrapper = shallow(<ArticleComponent {...props} />);
+
+  it('matches snapshot', () => {
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
+});
+
+describe('article component again', () => {
+  props.article.id = 5;
+  props.article.tagList = ['edna'];
   let wrapper = shallow(<ArticleComponent {...props} />);
 
   it('matches snapshot', () => {

@@ -5,9 +5,10 @@ import CommentContainer from '../../containers/CommentContainer';
 import { Link } from "react-router-dom";
 import DeleteArticleContainer from '../../containers/DeleteArticle';
 import '../../../assets/styles/getarticle.scss';
+import ShareArticle from '../ShareArticle';
 
 const ArticleComponent = (props) => {
-  const { articleId, article: { id, title, body, author, description, tagList = [] }, handleLike, handleDislike, auth: { username }, handleBookmark } = props;
+  const { articleId, article: { id, title, body, author, description, tagList = [] }, handleLike, handleDislike, handleBookmark, auth } = props;
   return (
     <>
       <div>
@@ -17,9 +18,9 @@ const ArticleComponent = (props) => {
             <div className="row">
               <div className="col-md-10">
                 <h1 className="article-title">{title}</h1>
-                {id ? <RateArticle articleId={id} /> : null}
+                { id ? (<div><RateArticle articleId={id} /><ShareArticle {...props.article} /></div>) : null}
               </div>
-              {username === author ? (
+              {(auth !== undefined) && (auth.username === author) ? (
                 <>
                   <div className="col-md-1 edit-btn">
                     <Link to="/article/update">
