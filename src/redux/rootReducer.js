@@ -12,6 +12,8 @@ import dislikeArticleReducers from './reducers/dislikeArticleReducers';
 import CommentReducer from '../redux/reducers/CommentReducer';
 import FetchCommentReducer from '../redux/reducers/FetchCommentReducer';
 import rateAticle from './reducers/rateArticle';
+import UpdateArticleReducer from './reducers/UpdateArticle';
+import DeleteArticleReducer from './reducers/DeleteArticle';
 
 export default combineReducers({
   signup: signupReducer,
@@ -26,5 +28,7 @@ export default combineReducers({
   dislikeArticleReducers: dislikeArticleReducers,
   postComment: CommentReducer,
   fetchComment: FetchCommentReducer,
-  rateAticle: rateAticle
+  rateAticle: rateAticle,
+  updateArticle: UpdateArticleReducer,
+  deleteArticle: DeleteArticleReducer
 });

@@ -36,7 +36,6 @@ class SignupFormComponent extends Component {
                   id="username"
                   placeholder="username"
                   className="form-control input-field"
-
                 />
                 <p>{signupErrors.username ? (<span className="input-error" id="username_error">
                   {signupErrors.username}</span>) : ("")}</p>

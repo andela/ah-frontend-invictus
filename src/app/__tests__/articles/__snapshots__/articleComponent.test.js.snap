@@ -1,77 +1,87 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`article component matches snapshot 1`] = `
-<div>
-  <Connect(NavbarComponent) />
-  <div
-    className="container"
-  >
+<Fragment>
+  <div>
+    <Connect(NavbarComponent) />
     <div
-      className="article-main"
+      className="container"
     >
-      <h1
-        className="article-title"
-      >
-        Example Title
-      </h1>
       <div
-        className="article-desc"
+        className="article-main"
       >
-        Test
-      </div>
-      <div>
-        Test
-      </div>
-      <img
-        alt=""
-        className="card-image"
-        src="https://picsum.photos/600/300"
-      />
-      <div
-        className="article-body"
-      >
-        Some text
-      </div>
-      <div
-        className="like-dislike"
-      >
-        <i
-          className="fa fa-thumbs-up"
-          role="presentation"
-          style={
-            Object {
-              "color": "blue",
-              "marginRight": "10px",
-            }
-          }
-        />
-        <i
-          className="fa fa-thumbs-down"
-          role="presentation"
-          style={
-            Object {
-              "color": "red",
-            }
-          }
-        />
-      </div>
-      <div
-        className="all-tags"
-      >
-        <hr />
-        <ul>
-          <li
-            className="tag"
-            key="edna"
+        <div
+          className="row"
+        >
+          <div
+            className="col-md-10"
           >
-            edna
-          </li>
-        </ul>
+            <h1
+              className="article-title"
+            >
+              Example Title
+            </h1>
+          </div>
+        </div>
+        <div
+          className="article-desc"
+        >
+          Test
+        </div>
         <div>
-          <Connect(CommentContainer) />
+          Test
+        </div>
+        <img
+          alt=""
+          className="card-image"
+          src="https://picsum.photos/600/300"
+        />
+        <div
+          className="article-body"
+        >
+          Some text
+        </div>
+        <div
+          className="like-dislike"
+        >
+          <i
+            className="fa fa-thumbs-up"
+            role="presentation"
+            style={
+              Object {
+                "color": "blue",
+                "marginRight": "10px",
+              }
+            }
+          />
+          <i
+            className="fa fa-thumbs-down"
+            role="presentation"
+            style={
+              Object {
+                "color": "red",
+              }
+            }
+          />
+        </div>
+        <div
+          className="all-tags"
+        >
+          <hr />
+          <ul>
+            <li
+              className="tag"
+              key="edna"
+            >
+              edna
+            </li>
+          </ul>
+          <div>
+            <Connect(CommentContainer) />
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</Fragment>
 `;

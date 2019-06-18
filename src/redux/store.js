@@ -10,7 +10,7 @@ const initialState = {};
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['profile']
+  whitelist: ['profileReducer', 'auth']
 };
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 const middleware = [thunk, logger];
@@ -25,6 +25,5 @@ const configureStore = () => {
   const persistor = persistStore(store);
   return { persistor, store };
 };
-
 
 export default configureStore;

@@ -14,7 +14,7 @@ const props = {
       body: 'body'
     }
   },
-  match: {params: {articleId:7}},
+  match: { params: { articleId: 7 } },
   fetchArticle: jest.fn()
 };
 
@@ -25,20 +25,20 @@ describe('fetch article', () => {
   });
 
   it('should render correctly', () => {
-    const wrapper = shallow(<Article store={store} {...props} />); 
-    expect(toJson(wrapper)).toMatchSnapshot();  
+    const wrapper = shallow(<Article store={store} {...props} />);
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 
   it('should return article state', () => {
-    const wrapper = shallow(<Article store={store} {...props}/>);
-    expect(wrapper.instance().props.getArticleReducer).toEqual({article: {body: 'body'}});
+    const wrapper = shallow(<Article store={store} {...props} />);
+    expect(wrapper.instance().props.getArticleReducer).toEqual({ article: { body: 'body' } });
   });
-  
+
   it('testing mapStateToProps', () => {
-    const initialState = {article: {}};
-    expect(mapStateToProps(initialState)).toEqual({article: {}});
+    const initialState = { article: {}, auth: {} };
+    expect(mapStateToProps(initialState)).toEqual({ article: {} });
   });
-  
+
 
 });
 
@@ -53,7 +53,7 @@ describe('Article like dislike container container', () => {
           body: 'body'
         }
       },
-      match: {params: {articleId:7}},
+      match: { params: { articleId: 7 } },
       fetchArticle: jest.fn(),
       handleLike: jest.fn(),
       likeArticle: jest.fn(),
@@ -64,7 +64,7 @@ describe('Article like dislike container container', () => {
         error: jest.fn()
       }
     };
-    wrapper = shallow(<Article {...props}/>);
+    wrapper = shallow(<Article {...props} />);
     instance = wrapper.instance();
   });
 

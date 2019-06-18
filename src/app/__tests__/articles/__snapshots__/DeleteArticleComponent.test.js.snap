@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DeleteArticleComponent/> component matches snapshot 1`] = `
+<div>
+  <button
+    className="btn btn-outline-danger"
+  >
+    Delete
+  </button>
+</div>
+`;

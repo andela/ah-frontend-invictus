@@ -1,0 +1,28 @@
+@import "article";
+@import "signup";
+
+$edit-mode-color: #788989;
+
+.article-card {
+  margin-top: 8%;
+}
+
+.postarticle-btn {
+  border-radius: 0.3em;
+  padding: 7px;
+}
+
+.postarticle-btn:focus {
+  outline: none;
+}
+
+.error-display {
+  color: $input-error;
+  font-size: 80%;
+  margin-top: 1px;
+  text-align: left;
+}
+
+.edit-mode {
+  color: $edit-mode-color;
+}
