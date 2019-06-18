@@ -11,7 +11,7 @@ const fetchArticles = () => dispatch => {
     .then(response => {
       dispatch({
         type: articlesTypes.FETCH_ARTICLES,
-        payload: response.data.article.results
+        payload: response.data.article
       });
     });
 };
