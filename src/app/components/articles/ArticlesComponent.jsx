@@ -24,6 +24,7 @@ const ArticlesComponent = (props) => {
         </div></div></Link>));
   return (<div><div className="container">
     <h2 className="articles-heading">Recent Articles</h2><hr />
-    <div className="row">{articlesItems}</div></div></div>);
+    <div className="row">{articlesItems}</div></div></div>
+  );
 };
 export default ArticlesComponent;
