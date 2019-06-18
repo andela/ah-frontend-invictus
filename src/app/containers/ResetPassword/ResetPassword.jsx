@@ -59,7 +59,7 @@ ResetPassword.propTypes = {
   match: PropTypes.object,
   resetPasswordAction: PropTypes.func
 };
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   message: state.RequestResetPassword.message,
   errors: state.RequestResetPassword.errors
 });

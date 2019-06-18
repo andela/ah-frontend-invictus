@@ -30,7 +30,7 @@ describe('fetch articles', () => {
     const expectedActions = [
       {
         type: articleTypes.FETCH_ARTICLE,
-        payload: response.data.article
+        payload: response.data[0]
       }
     ];
     moxios.wait(() => {

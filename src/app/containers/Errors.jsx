@@ -14,7 +14,6 @@ export default class Errors extends Component {
   }
    mapErrorsToList = props => {
      let items = [];
-
      if (Array.isArray(props.errors)) {
        for (let i = 0; i < props.errors.length; i++) {
          items.push(props.errors[i]);
@@ -31,11 +30,9 @@ export default class Errors extends Component {
    render () {
      function Repeat (props) {
        let items = [];
-
        for (let i = 0; i < props.errors.length; i++) {
          items.push(props.children(i, props.errors[i]));
        }
-
        return <div className="danger" ><ul>{items}</ul></div>;
      }
      return (

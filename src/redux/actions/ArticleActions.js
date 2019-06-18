@@ -27,7 +27,7 @@ export const postArticle = (articleUrl, articleDetails, headers, props) => dispa
     }
     );
 
-function actionDispatch(dispatch, response, message, type) {
+function actionDispatch (dispatch, response, message, type) {
   dispatch({ type: type, payload: response.data });
   toast.dismiss();
   toast.success(message, {

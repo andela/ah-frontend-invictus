@@ -2,17 +2,13 @@ import { articleTypes } from '../../actions/types';
 import axios from 'axios';
 import { fetchArticleUrl } from '../../../app/urls';
 
-let authorizationHeader = localStorage.getItem('user_token');
-
 const fetchArticle = (id) => dispatch => {
-  return axios.get(`${fetchArticleUrl}${id}/`, {
-    headers: { Authorization: `Bearer ${authorizationHeader}` }
+  return axios.get(`${fetchArticleUrl}${id}/retrieve/`, {
   })
-
     .then(response => {
       dispatch({
         type: articleTypes.FETCH_ARTICLE,
-        payload: response.data.article
+        payload: response.data[0]
       });
     });
 };

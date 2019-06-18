@@ -1,5 +1,5 @@
 import React from 'react';
-import PasswordResetForm from '../components/PasswordResetForm';
+import PasswordResetForm from '../../components/PasswordResetForm';
 import toJson from 'enzyme-to-json';
 import { shallow } from 'enzyme';
 

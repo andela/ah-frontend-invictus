@@ -1,0 +1,29 @@
+.rating {
+  height: 100px;
+  text-align: center;
+  width: 100%;
+}
+
+span {
+  cursor: pointer;
+  height: 20px;
+  width: 50%;
+}
+
+.svg-inline--fa.fa-star {
+  transition: all 0.2s ease;
+}
+
+.svg-inline--fa.fa-star:hover {
+  font-size: large;
+}
+
+.fa-star button {
+  border-radius: 5px;
+  font-size: small;
+  margin: 5px;
+}
+
+.fa-star::before {
+  content: "";
+}

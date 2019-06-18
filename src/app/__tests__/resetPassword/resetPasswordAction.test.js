@@ -1,8 +1,8 @@
 import configureMockStore from "redux-mock-store";
 import thunk from "redux-thunk";
 import axios from 'axios';
-import { resetPasswordRequestAction, resetPasswordAction, handleErrors } from "../../redux/actions/resetPasswordAction";
-import { data, erro, erro2 } from '../mock_data';
+import { resetPasswordRequestAction, resetPasswordAction, handleErrors } from "../../../redux/actions/resetPasswordAction";
+import { data, erro, erro2 } from '../../mock_data';
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
@@ -22,6 +22,15 @@ describe("resetPasswordRequest Action", () => {
     return store.dispatch(resetPasswordRequestAction({ email: 'j' }))
       .then(() => {
         expect(store.getActions()).toEqual(data.passRequest.expect);
+      });
+  });
+
+  it("resetPasswordRequestAction should throw an error", () => {
+    axios.post.mockResolvedValue();
+    store.dispatch(resetPasswordAction({ token: 'j' }))
+    return store.dispatch(resetPasswordRequestAction({ email: 'j' }))
+      .then(() => {
+        expect(store.getActions()).toEqual([]);
       });
   });
 

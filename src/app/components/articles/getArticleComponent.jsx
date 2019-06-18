@@ -1,15 +1,17 @@
 import React from 'react';
 import Navbar from '../../components/Navbar';
+import RateArticle from '../../containers/RateArticle';
 import CommentContainer from '../../containers/CommentContainer';
 
 const ArticleComponent = (props) => {
-  const { articleId, article: { title, body, author, description, tagList = [] }, handleLike, handleDislike } = props;
+  const { articleId, article: { id, title, body, author, description, tagList = [] }, handleLike, handleDislike } = props;
   return (
     <div>
       <Navbar />
       <div className="container">
         <div className="article-main">
           <h1 className="article-title">{title}</h1>
+          { id ? <RateArticle articleId={id} /> : null}
           <div className="article-desc">{description}</div>
           <div>{author}</div>
           <img className="card-image" alt="" src="https://picsum.photos/600/300" />

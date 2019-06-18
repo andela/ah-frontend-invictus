@@ -11,6 +11,7 @@ import likeArticleReducers from './reducers/likeArticleReducers';
 import dislikeArticleReducers from './reducers/dislikeArticleReducers';
 import CommentReducer from '../redux/reducers/CommentReducer';
 import FetchCommentReducer from '../redux/reducers/FetchCommentReducer';
+import rateAticle from './reducers/rateArticle';
 
 export default combineReducers({
   signup: signupReducer,
@@ -24,5 +25,6 @@ export default combineReducers({
   likeArticleReducers: likeArticleReducers,
   dislikeArticleReducers: dislikeArticleReducers,
   postComment: CommentReducer,
-  fetchComment: FetchCommentReducer
+  fetchComment: FetchCommentReducer,
+  rateAticle: rateAticle
 });
