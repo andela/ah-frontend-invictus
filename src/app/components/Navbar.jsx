@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import '../../assets/styles/navbar.scss';
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import NotificationsContainer from "../containers/NotificationsContainer";
 export class NavbarComponent extends Component {
   render () {
     const { isLoggedIn } = this.props;
@@ -21,6 +22,9 @@ export class NavbarComponent extends Component {
             </ul>
             {isLoggedIn ? (
               <ul className="navbar-nav ml-2 ">
+                <li className="nav-item">
+                  <NotificationsContainer />
+                </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/articles">Articles</Link></li>
                 <li className="nav-item" />

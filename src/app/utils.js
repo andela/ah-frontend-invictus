@@ -1,5 +1,6 @@
 export const APP_URLS = {
-  SIGNUP_URL: 'https://inviticus-staging.herokuapp.com/api/users/'
+  SIGNUP_URL: 'https://inviticus-staging.herokuapp.com/api/users/',
+  NOTIFICATIONS: 'https://inviticus-staging.herokuapp.com/api/notifications'
 };
 
 export const articleUrl = 'https://inviticus-staging.herokuapp.com/api/articles/';

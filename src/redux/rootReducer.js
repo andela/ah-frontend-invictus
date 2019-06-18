@@ -15,7 +15,7 @@ import rateAticle from './reducers/rateArticle';
 import UpdateArticleReducer from './reducers/UpdateArticle';
 import DeleteArticleReducer from './reducers/DeleteArticle';
 import BookmarksReducer from './reducers/BookmarksReducer';
-
+import NotificationsReducer from '../redux/reducers/NotificationsReducer';
 
 export default combineReducers({
   signup: signupReducer,
@@ -33,5 +33,6 @@ export default combineReducers({
   rateAticle: rateAticle,
   updateArticle: UpdateArticleReducer,
   deleteArticle: DeleteArticleReducer,
-  BookmarksReducer: BookmarksReducer
+  BookmarksReducer: BookmarksReducer,
+  notifications: NotificationsReducer
 });
