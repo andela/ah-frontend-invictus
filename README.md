@@ -8,7 +8,7 @@ Create a community for like-minded authors to foster inspiration and innovation 
 
 ### Illustrations
 Register page
-<img src="src/assets/images/signUp.png">
+<img src="src/assets/images/SignUp.png">
 
 Login page
 <img src="src/assets/images/logIn.png">

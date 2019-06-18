@@ -14,6 +14,8 @@ import FetchCommentReducer from '../redux/reducers/FetchCommentReducer';
 import rateAticle from './reducers/rateArticle';
 import UpdateArticleReducer from './reducers/UpdateArticle';
 import DeleteArticleReducer from './reducers/DeleteArticle';
+import BookmarksReducer from './reducers/BookmarksReducer';
+
 
 export default combineReducers({
   signup: signupReducer,
@@ -30,5 +32,6 @@ export default combineReducers({
   fetchComment: FetchCommentReducer,
   rateAticle: rateAticle,
   updateArticle: UpdateArticleReducer,
-  deleteArticle: DeleteArticleReducer
+  deleteArticle: DeleteArticleReducer,
+  BookmarksReducer: BookmarksReducer
 });

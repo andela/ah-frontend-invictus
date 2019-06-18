@@ -3,6 +3,7 @@
 exports[`fetch article should render correctly 1`] = `
 <div>
   <ArticleComponent
+    handleBookmark={[Function]}
     handleDislike={[Function]}
     handleLike={[Function]}
   />
