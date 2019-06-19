@@ -1,5 +1,7 @@
 
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import '../../assets/styles/navbar.scss';
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
@@ -26,6 +28,8 @@ export class NavbarComponent extends Component {
                   <NotificationsContainer />
                 </li>
                 <li className="nav-item">
+                  <Link className="nav-link nav-link-active" to="/search"><FontAwesomeIcon icon={faSearch} /></Link></li>
+                <li className="nav-item">
                   <Link className="nav-link" to="/articles">Articles</Link></li>
                 <li className="nav-item" />
                 <li className="nav-item">
@@ -34,6 +38,8 @@ export class NavbarComponent extends Component {
                   <Link className="nav-link" to="/login">Logout</Link></li>
               </ul>) : (
               <ul className="navbar-nav ml-2 ">
+                <li className="nav-item">
+                  <Link className="nav-link nav-link-active" to="/search"><FontAwesomeIcon icon={faSearch} /></Link></li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/login">Login </Link></li>
                 <li className="nav-item">
