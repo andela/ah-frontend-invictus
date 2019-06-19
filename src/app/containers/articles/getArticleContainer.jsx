@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import GetArticleComponent from '../../../app/components/articles/getArticleComponent';
 import fetchArticle from '../../../redux/actions/articles/ArticleActions';
-import { likeArticle, dislikeArticle } from '../../../redux/actions/ArticleActions';
+import { likeArticle, dislikeArticle, bookmarkArticle } from '../../../redux/actions/ArticleActions';
 
 export class Article extends Component {
   componentWillMount () {
@@ -21,6 +21,11 @@ export class Article extends Component {
     this.props.dislikeArticle(articleId, this.props);
   };
 
+  handleBookmark = () => {
+    const articleId = this.props.match.params.id;
+    this.props.bookmarkArticle(articleId, this.props);
+  };
+
   render () {
     const articleId = this.props.match.params.id;
     return (
@@ -29,6 +34,7 @@ export class Article extends Component {
           handleLike={this.handleLike}
           handleDislike={this.handleDislike}
           auth={this.props.auth}
+          handleBookmark={this.handleBookmark}
         />
       </div>
     );
@@ -46,7 +52,9 @@ Article.propTypes = {
   handleLike: PropTypes.func,
   handleDislike: PropTypes.func,
   likeArticle: PropTypes.func,
-  dislikeArticle: PropTypes.func
+  dislikeArticle: PropTypes.func,
+  handleBookmark: PropTypes.func,
+  bookmarkArticle: PropTypes.func
 };
 
-export default connect(mapStateToProps, { fetchArticle, likeArticle, dislikeArticle })(Article);
+export default connect(mapStateToProps, { fetchArticle, likeArticle, dislikeArticle, bookmarkArticle })(Article);

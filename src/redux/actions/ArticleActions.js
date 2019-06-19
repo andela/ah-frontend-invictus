@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { toast } from 'react-toastify';
-import { likeTypes, dislikeTypes } from '../actions/types';
+import { likeTypes, dislikeTypes, bookmarkTypes } from '../actions/types';
 import { articleTypes } from './types';
 
 export const postArticle = (articleUrl, articleDetails, headers, props) => dispatch =>
@@ -94,5 +94,32 @@ export const dislikeArticle = (articleId, props) => dispatch => {
         autoClose: 3000
       });
       props.history.push('/login');
+    });
+};
+
+export const bookmarkArticle = (articleId, props) => dispatch => {
+  const body = {};
+  const headers = { headers: { Authorization: `Bearer ${localStorage.getItem("user_token")}` } };
+  return axios.post(`https://inviticus-staging.herokuapp.com/api/articles/${articleId}/bookmarks/`, body, headers)
+    .then(response => {
+      if (response.status === 201) {
+        const message = "You have bookmarked the article for reading later";
+        actionDispatch(dispatch, response, message, bookmarkTypes.CREATE_BOOKMARK_SUCCESS);
+      }
+    }).catch((error) => {
+      if (error.response.status === 400) {
+        dispatch({ type: bookmarkTypes.CREATE_BOOKMARK_ALREADY, payload: 'error' });
+        toast.dismiss();
+        toast.error("You already bookmarked this Article", { hideProgressBar: false, autoClose: 3000 });
+      } else if (error.response.status === 403) {
+        dispatch({ type: bookmarkTypes.CREATE_BOOKMARK_FAIL, payload: 'error' });
+        toast.dismiss();
+        toast.error("Your token has expired. Please log in again.", { hideProgressBar: false, autoClose: 3000 });
+        props.history.push('/login');
+      } else if (error.response.status === 404) {
+        dispatch({ type: bookmarkTypes.CREATE_BOOKMARK_NO_ARTICLE, payload: 'error' });
+        toast.dismiss();
+        toast.error("The article your trying to bookmark is not found", { hideProgressBar: false, autoClose: 3000 });
+      }
     });
 };

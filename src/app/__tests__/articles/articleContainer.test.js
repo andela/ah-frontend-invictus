@@ -21,7 +21,7 @@ const props = {
 describe('fetch article', () => {
   const mockFetch = jest.fn();
   afterEach(() => {
-    mockFetch.mock.calls = []
+    mockFetch.mock.calls = [];
   });
 
   it('should render correctly', () => {
@@ -38,8 +38,6 @@ describe('fetch article', () => {
     const initialState = { article: {}, auth: {} };
     expect(mapStateToProps(initialState)).toEqual({ article: {} });
   });
-
-
 });
 
 describe('Article like dislike container container', () => {
@@ -69,7 +67,6 @@ describe('Article like dislike container container', () => {
   });
 
 
-
   it('handles like', () => {
     instance.handleLike();
     expect(props.likeArticle).toHaveBeenCalledTimes(1);
@@ -77,5 +74,39 @@ describe('Article like dislike container container', () => {
   it('handles dislike', () => {
     instance.handleDislike();
     expect(props.dislikeArticle).toHaveBeenCalledTimes(1);
+  });
+});
+
+describe('Article handle bookmark container', () => {
+  let props;
+  let instance;
+  let wrapper;
+  beforeEach(() => {
+    props = {
+      getArticleReducer: {
+        article: {
+          body: 'body'
+        }
+      },
+      match: { params: { articleId: 7 } },
+      fetchArticle: jest.fn(),
+      handleLike: jest.fn(),
+      likeArticle: jest.fn(),
+      handleDislike: jest.fn(),
+      dislikeArticle: jest.fn(),
+      handleBookmark: jest.fn(),
+      bookmarkArticle: jest.fn(),
+      toast: {
+        error: jest.fn()
+      }
+    };
+    wrapper = shallow(<Article {...props}/>);
+    instance = wrapper.instance();
+  });
+
+
+  it('handles bookmark', () => {
+    instance.handleBookmark();
+    expect(props.bookmarkArticle).toHaveBeenCalledTimes(1);
   });
 });

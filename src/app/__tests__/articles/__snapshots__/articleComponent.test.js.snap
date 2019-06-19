@@ -50,7 +50,6 @@ exports[`article component matches snapshot 1`] = `
             style={
               Object {
                 "color": "blue",
-                "marginRight": "10px",
               }
             }
           />
@@ -60,6 +59,15 @@ exports[`article component matches snapshot 1`] = `
             style={
               Object {
                 "color": "red",
+              }
+            }
+          />
+          <i
+            className="fa fa-bookmark"
+            role="presentation"
+            style={
+              Object {
+                "color": "gold",
               }
             }
           />
