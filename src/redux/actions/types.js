@@ -88,3 +88,14 @@ export const notificationTypes = {
 export const searchTypes = {
   RESULTS: 'RESULTS'
 };
+
+export const userTypes = {
+  FETCH_USERS: 'FETCH_USERS',
+  FETCH_USERS_FAIL: 'FETCH_USERS_FAIL',
+  FOLLOW: 'FOLLOW',
+  FOLLOW_FAIL: 'FOLLOW_FAIL',
+  FOLLOW_USER: 'FOLLOW_USER',
+  FOLLOW_USER_FAIL: 'FOLLOW_USER_FAIL',
+  UNFOLLOW: 'UNFOLLOW',
+  UNFOLLOW_FAIL: 'UNFOLLOW_FAIL'
+};

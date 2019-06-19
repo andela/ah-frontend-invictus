@@ -17,6 +17,10 @@ import DeleteArticleReducer from './reducers/DeleteArticle';
 import BookmarksReducer from './reducers/BookmarksReducer';
 import NotificationsReducer from '../redux/reducers/NotificationsReducer';
 import searchReducer from '../redux/reducers/Search';
+import FetchUsersReducer from '../redux/reducers/FetchUsersReducer';
+import FollowReducer from './reducers/FollowReducer';
+import FollowUserReducer from './reducers/FollowUserReducer';
+import UnfollowReducer from './reducers/UnfollowReducer';
 
 export default combineReducers({
   signup: signupReducer,
@@ -36,5 +40,9 @@ export default combineReducers({
   deleteArticle: DeleteArticleReducer,
   BookmarksReducer: BookmarksReducer,
   notifications: NotificationsReducer,
-  search: searchReducer
+  search: searchReducer,
+  fetchUser: FetchUsersReducer,
+  followUser: FollowReducer,
+  followUsers: FollowUserReducer,
+  unfollowUsers: UnfollowReducer
 });

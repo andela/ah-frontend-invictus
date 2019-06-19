@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FetchUsers /> matches snapshot 1`] = `
+<div>
+  <Connect(NavbarComponent) />
+  <div
+    className="container"
+  >
+    <h2
+      className="articles-heading"
+    >
+      All User Profiles
+    </h2>
+    <hr />
+    <div
+      className="row"
+    >
+      <p
+        className="card-article-link"
+        key="sanygreen"
+        to="/users/sanygreen"
+      >
+        <div
+          className="card-article"
+          style={
+            Object {
+              "width": "21.85rem",
+            }
+          }
+        >
+          <div
+            className="card-body"
+          >
+            <div>
+              <p
+                className="card-publish-date"
+              >
+                <b>
+                  Updated At: 
+                </b>
+                2019-06-17
+              </p>
+            </div>
+             
+            <p
+              className="card-text"
+            >
+              <b>
+                Bio:
+              </b>
+               
+            </p>
+            <p
+              className="card-footer-text"
+            >
+              <b>
+                FirstName:
+              </b>
+               
+            </p>
+            <p
+              className="card-footer-text"
+            >
+              <b>
+                LastName:
+              </b>
+               
+            </p>
+            <p
+              className="card-footer-text"
+            >
+              <b>
+                UserName:
+              </b>
+               
+              sanygreen
+            </p>
+            <div
+              className="card-body-footer"
+            >
+              <a
+                href="#"
+              >
+                <button
+                  className="btn btn-outline-success"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  UnFollow
+                </button>
+              </a>
+              <div
+                className="all-tags"
+              >
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </p>
+    </div>
+  </div>
+</div>
+`;

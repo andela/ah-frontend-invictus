@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing User Container matches snapshot 1`] = `
+<FetchUsers
+  state={
+    Object {
+      "fetchUser": [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      },
+      "followAGivenUser": [MockFunction],
+      "followUser": [MockFunction] {
+        "calls": Array [
+          Array [
+            null,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      },
+      "followUsers": [MockFunction],
+      "unfollowAGivenUser": [MockFunction],
+      "unfollowUsers": [MockFunction],
+    }
+  }
+/>
+`;
