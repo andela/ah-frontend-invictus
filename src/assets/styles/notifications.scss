@@ -1,0 +1,74 @@
+$bell-icon-color: rgba(185, 190, 194, 0.726);
+$bell-icon-hover-color: #f0f8ff;
+$drop-down-content-hover-color: rgb(70, 69, 69);
+$drop-down-content-hover-background-color: #f1f1f1;
+$drop-downcontent-background-color: #f9f9f9;
+
+.bell-icon {
+  color: $bell-icon-color;
+  font-size: 20px;
+  margin-right: 3px;
+  margin-top: 8px;
+}
+
+.bell-icon:hover {
+  color: $bell-icon-hover-color;
+  cursor: pointer;
+}
+
+.notification-div {
+  margin-right: 5px !important;
+}
+
+.notify-badge {
+  padding-right: 10px !important;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: 0;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  background-color: $drop-downcontent-background-color;
+  border-radius: 0.3em;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  display: none;
+  min-width: 200px;
+  overflow: scroll;
+  position: absolute;
+  z-index: 1;
+  a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 80%;
+  }
+}
+
+.dropdown-content a:hover {
+  background-color: $drop-down-content-hover-background-color;
+  color: $drop-down-content-hover-color;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.hr {
+  margin-bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0;
+}
