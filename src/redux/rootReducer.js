@@ -16,6 +16,7 @@ import UpdateArticleReducer from './reducers/UpdateArticle';
 import DeleteArticleReducer from './reducers/DeleteArticle';
 import BookmarksReducer from './reducers/BookmarksReducer';
 import NotificationsReducer from '../redux/reducers/NotificationsReducer';
+import searchReducer from '../redux/reducers/Search';
 
 export default combineReducers({
   signup: signupReducer,
@@ -34,5 +35,6 @@ export default combineReducers({
   updateArticle: UpdateArticleReducer,
   deleteArticle: DeleteArticleReducer,
   BookmarksReducer: BookmarksReducer,
-  notifications: NotificationsReducer
+  notifications: NotificationsReducer,
+  search: searchReducer
 });

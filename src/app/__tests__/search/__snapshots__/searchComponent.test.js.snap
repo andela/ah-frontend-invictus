@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchComponent /> matches snapshot 1`] = `
+<div>
+  <Connect(NavbarComponent) />
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-1"
+    />
+    <div
+      className="col-md-10"
+    >
+      <form>
+        <div
+          className="input-group mb-3"
+        >
+          <input
+            aria-describedby="button-addon2"
+            aria-label="type something..."
+            className="form-control"
+            name="search"
+            placeholder="type something..."
+            type="text"
+          />
+          <div>
+            <select
+              className="form-control"
+              id="filterSelectID"
+              name="filter"
+            >
+              <option
+                value="none"
+              >
+                none
+              </option>
+              <option
+                value="tag"
+              >
+                Tag
+              </option>
+              <option
+                value="author"
+              >
+                Author
+              </option>
+              <option
+                value="title"
+              >
+                Title
+              </option>
+            </select>
+          </div>
+          <label
+            className="text-white"
+            htmlFor="filterSelectID"
+          >
+            Filter by
+          </label>
+          <div
+            className="input-group-append"
+          >
+            <button
+              className="btn btn-outline-secondary"
+              id="button-addon2"
+              type="submit"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </form>
+      <div>
+        <Link
+          className="card-article-link"
+          key="1"
+          to="/articles/1"
+        >
+          <div
+            className="container"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="card-article"
+                style={
+                  Object {
+                    "marginLeft": "25%",
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  className="card-image"
+                  src="https://picsum.photos/600/350"
+                />
+                <div
+                  className="card-body"
+                >
+                  <div>
+                    <p
+                      className="card-publish-date"
+                    >
+                      Published On:
+                      Test
+                    </p>
+                  </div>
+                  <h4
+                    className="card-title"
+                  >
+                    Test
+                  </h4>
+                  <p
+                    className="card-text"
+                  >
+                    Test
+                  </p>
+                  <div
+                    className="card-body-footer"
+                  >
+                    <p
+                      className="card-footer-text"
+                    >
+                      @
+                      Test
+                    </p>
+                  </div>
+                  <div
+                    className="all-tags"
+                  >
+                    <hr />
+                    <ul>
+                      <li
+                        className="tag"
+                        key="edna"
+                      >
+                        edna
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Link>
+      </div>
+    </div>
+    <div
+      className="col-md-1"
+    />
+  </div>
+</div>
+`;

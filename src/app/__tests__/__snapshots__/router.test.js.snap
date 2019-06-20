@@ -147,5 +147,18 @@ exports[`<Router /> matches snapshot 1`] = `
     }
     path="/article/update"
   />
+  <Route
+    component={
+      Object {
+        "$$typeof": Symbol(react.memo),
+        "WrappedComponent": [Function],
+        "compare": null,
+        "displayName": "Connect(Search)",
+        "type": [Function],
+      }
+    }
+    exact={true}
+    path="/search"
+  />
 </BrowserRouter>
 `;

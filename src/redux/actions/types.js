@@ -83,3 +83,7 @@ export const bookmarkTypes = {
 export const notificationTypes = {
   NOTIFICATIONS: 'NOTIFICATIONS'
 };
+
+export const searchTypes = {
+  RESULTS: 'RESULTS'
+};
