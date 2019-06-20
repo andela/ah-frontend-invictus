@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+<<<<<<< HEAD
+exports[`article component matches snapshot 1`] = `
+<Fragment>
+  <div>
+    <Connect(NavbarComponent) />
+=======
+exports[`article component again matches snapshot 1`] = `
+<div>
+  <Connect(NavbarComponent) />
+  <div
+    className="container"
+  >
+>>>>>>> feat (Share Articles): User should be able to share articles on social media.
+    <div
+      className="container"
+    >
+<<<<<<< HEAD
+=======
+      <h1
+        className="article-title"
+      >
+        Example Title
+      </h1>
+      <div>
+        <Connect(RateArticle)
+          articleId={5}
+        />
+        <_default
+          author="Test"
+          body="Some text"
+          description="Test"
+          id={5}
+          tagList={
+            Array [
+              "edna",
+            ]
+          }
+          title="Example Title"
+        />
+      </div>
+      <div
+        className="article-desc"
+      >
+        Test
+      </div>
+      <div>
+        Test
+      </div>
+      <img
+        alt=""
+        className="card-image"
+        src="https://picsum.photos/600/300"
+      />
+      <div
+        className="article-body"
+      >
+        Some text
+      </div>
+>>>>>>> feat (Share Articles): User should be able to share articles on social media.
+      <div
+        className="article-main"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-md-10"
+          >
+            <h1
+              className="article-title"
+            >
+              Example Title
+            </h1>
+          </div>
+        </div>
+        <div
+          className="article-desc"
+        >
+          Test
+        </div>
+        <div>
+          Test
+        </div>
+        <img
+          alt=""
+          className="card-image"
+          src="https://picsum.photos/600/300"
+        />
+        <div
+          className="article-body"
+        >
+          Some text
+        </div>
+        <div
+          className="like-dislike"
+        >
+          <i
+            className="fa fa-thumbs-up"
+            role="presentation"
+            style={
+              Object {
+                "color": "blue",
+                "marginRight": "10px",
+              }
+            }
+          />
+          <i
+            className="fa fa-thumbs-down"
+            role="presentation"
+            style={
+              Object {
+                "color": "red",
+              }
+            }
+          />
+        </div>
+        <div
+          className="all-tags"
+        >
+          <hr />
+          <ul>
+            <li
+              className="tag"
+              key="edna"
+            >
+              edna
+            </li>
+          </ul>
+          <div>
+            <Connect(CommentContainer) />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Fragment>
+`;
+
+exports[`article component matches snapshot 1`] = `
+<div>
+  <Connect(NavbarComponent) />
+  <div
+    className="container"
+  >
+    <div
+      className="article-main"
+    >
+      <h1
+        className="article-title"
+      >
+        Example Title
+      </h1>
+      <div
+        className="article-desc"
+      >
+        Test
+      </div>
+      <div>
+        Test
+      </div>
+      <img
+        alt=""
+        className="card-image"
+        src="https://picsum.photos/600/300"
+      />
+      <div
+        className="article-body"
+      >
+        Some text
+      </div>
+      <div
+        className="like-dislike"
+      >
+        <i
+          className="fa fa-thumbs-up"
+          role="presentation"
+          style={
+            Object {
+              "color": "blue",
+              "marginRight": "10px",
+            }
+          }
+        />
+        <i
+          className="fa fa-thumbs-down"
+          role="presentation"
+          style={
+            Object {
+              "color": "red",
+            }
+          }
+        />
+      </div>
+      <div
+        className="all-tags"
+      >
+        <hr />
+        <ul />
+        <div>
+          <Connect(CommentContainer) />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
