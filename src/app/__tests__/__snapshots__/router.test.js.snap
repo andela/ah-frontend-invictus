@@ -50,6 +50,18 @@ exports[`<Router /> matches snapshot 1`] = `
         "$$typeof": Symbol(react.memo),
         "WrappedComponent": [Function],
         "compare": null,
+        "displayName": "Connect(LogoutContainer)",
+        "type": [Function],
+      }
+    }
+    path="/logout"
+  />
+  <Route
+    component={
+      Object {
+        "$$typeof": Symbol(react.memo),
+        "WrappedComponent": [Function],
+        "compare": null,
         "displayName": "Connect(ResetPassword)",
         "type": [Function],
       }

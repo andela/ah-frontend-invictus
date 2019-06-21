@@ -17,6 +17,11 @@ export default function (state = initialState, { type, payload }) {
     return { ...state,
       login_errors: payload.response
     };
+  case loginTypes.LOGOUT_SUCCESS:
+    return { ...state,
+      login_success: {},
+      isLoggedIn: false
+    };
   default:
     return state;
   }

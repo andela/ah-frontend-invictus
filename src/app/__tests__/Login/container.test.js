@@ -2,9 +2,13 @@ import React from 'react';
 import toJson from 'enzyme-to-json';
 import { shallow } from 'enzyme';
 import { LoginContainer, mapStateToProps } from '../../containers/LoginContainer';
+import { LogoutContainer } from '../../containers/LogoutContainer';
 
 describe('loginContainer Component', () => {
-  const wrapper = shallow(<LoginContainer />);
+  let wrapper = shallow(<LogoutContainer logoutAction = {jest.fn}/>);
+  wrapper.instance().componentWillMount();
+
+  wrapper = shallow(<LoginContainer />);
 
   it('matches snapshot', () => {
     expect(toJson(wrapper)).toMatchSnapshot();
