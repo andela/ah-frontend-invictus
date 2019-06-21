@@ -44,6 +44,29 @@ describe('Testing create comment success', () => {
       expect(dispatchedActions).toEqual(expectedActions);
     });
   });
+  it('Testing comment unsuccessfull', () => {
+
+    const expectedResponse = {
+      "message": "Comment successfully created.",
+    }
+    const commentData = {
+      "comment": {
+        "body": "comment"
+      }
+    };
+    moxios.wait(() => {
+      const request = moxios.requests.mostRecent();
+      request.respondWith({
+        status: 200,
+        response: expectedResponse
+      });
+    });
+    const store = mockStore({});
+    return store.dispatch(postComment(commentData)).then(() => {
+      const dispatchedActions = store.getActions();
+      expect(dispatchedActions).toEqual([]);
+    });
+  });
   // Testing failure
   it('Testing create comment failure', () => {
     const expectedResponse = {

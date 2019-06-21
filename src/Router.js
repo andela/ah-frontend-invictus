@@ -4,6 +4,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import HomePage from '../src/app/components/Home';
 import loginContainer from './app/containers/LoginContainer';
+import logoutContainer from './app/containers/LogoutContainer';
 import RequestResetPassword from './app/containers/ResetPassword/RequestResetPassword';
 import ResetPassword from './app/containers/ResetPassword/ResetPassword';
 import SignupComponent from './app/containers/Signup';
@@ -22,6 +23,7 @@ class Router extends Component {
         <ToastContainer />
         <Route exact path="/" component={HomePage} />
         <Route path="/login" component={loginContainer} />
+        <Route path="/logout" component={logoutContainer} />
         <Route path="/password/reset" component={RequestResetPassword} />
         <Route path="/resetpassword/:token" component={ResetPassword} />
         <Route path="/signup" component={SignupComponent} />

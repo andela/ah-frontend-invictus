@@ -5,7 +5,8 @@ export const resetpassword = {
 
 export const loginTypes = {
   LOGIN_SUCCESS: 'USERS_LOGIN_SUCCESS',
-  LOGIN_FAILURE: 'USERS_LOGIN_FAILURE'
+  LOGIN_FAILURE: 'USERS_LOGIN_FAILURE',
+  LOGOUT_SUCCESS: 'LOGOUT_SUCCESS'
 };
 export const signupType = {
   SIGNUP_SUCCESS: "SIGNUP_SUCCESS",

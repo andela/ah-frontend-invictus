@@ -30,12 +30,14 @@ export class NavbarComponent extends Component {
                 <li className="nav-item">
                   <Link className="nav-link nav-link-active" to="/search"><FontAwesomeIcon icon={faSearch} /></Link></li>
                 <li className="nav-item">
+                  <Link className="nav-link" to="/create">Create Article</Link></li>
+                <li className="nav-item">
                   <Link className="nav-link" to="/articles">Articles</Link></li>
                 <li className="nav-item" />
                 <li className="nav-item">
                   <Link className="nav-link" to="/profile">Profile</Link></li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/login">Logout</Link></li>
+                  <Link className="nav-link" to="/logout">Logout</Link></li>
               </ul>) : (
               <ul className="navbar-nav ml-2 ">
                 <li className="nav-item">

@@ -3,7 +3,7 @@ import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import moxios from 'moxios';
 import { loginTypes } from '../../../redux/actions/types';
-import { loginAction } from '../../../redux/actions/LoginActions';
+import { loginAction, logoutAction } from '../../../redux/actions/LoginActions';
 
 
 describe('Testing Auth Action', () => {
@@ -56,6 +56,18 @@ describe('Testing Auth Action', () => {
     return store.dispatch(loginAction(userData)).then(() => {
       expect(returnedResponse).toEqual(expectedActions);
     });
+  });
+
+  it('Testing User logout success', () => {
+    const expectedActions = [
+      {
+        type: loginTypes.LOGOUT_SUCCESS,
+        payload: 'joel'
+      }
+    ];
+    const store = mockStore({});
+    store.dispatch(logoutAction())
+    expect(store.getActions()).toEqual(expectedActions);
   });
 
   it('Testing User authentication fails', () => {

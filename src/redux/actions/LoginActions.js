@@ -24,3 +24,11 @@ export const loginAction = (userData, props) => dispatch => {
       });
     });
 };
+
+
+export const logoutAction = () => dispatch => {
+  dispatch({
+    type: loginTypes.LOGOUT_SUCCESS,
+    payload: 'joel'
+  });
+};
