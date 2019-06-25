@@ -1,7 +1,9 @@
 import { articlesTypes } from '../actions/types';
 
 const initialState = {
-  articles: []
+  articles: [],
+  currentPage: null,
+  totalPages: null
 };
 
 const ArticlesReducer = (state = initialState, action) => {
