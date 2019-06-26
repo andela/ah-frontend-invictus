@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing FollowUserContainer matches snapshot 1`] = `
+<FetchUsers
+  followAGivenUser={[Function]}
+  state={
+    Object {
+      "followAGivenUser": [MockFunction],
+      "followUsers": [MockFunction],
+    }
+  }
+/>
+`;

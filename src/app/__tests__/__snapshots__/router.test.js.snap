@@ -172,5 +172,31 @@ exports[`<Router /> matches snapshot 1`] = `
     exact={true}
     path="/search"
   />
+  <Route
+    component={
+      Object {
+        "$$typeof": Symbol(react.memo),
+        "WrappedComponent": [Function],
+        "compare": null,
+        "displayName": "Connect(UsersContainer)",
+        "type": [Function],
+      }
+    }
+    exact={true}
+    path="/users"
+  />
+  <Route
+    component={
+      Object {
+        "$$typeof": Symbol(react.memo),
+        "WrappedComponent": [Function],
+        "compare": null,
+        "displayName": "Connect(FollowContainer)",
+        "type": [Function],
+      }
+    }
+    exact={true}
+    path="/users/following/"
+  />
 </BrowserRouter>
 `;

@@ -15,6 +15,8 @@ import Article from './app/containers/articles/getArticleContainer';
 import UpdateArticleContainer from './app/containers/UpdateArticle';
 import SearchComponent from './app/containers/Search';
 
+import UsersContainer from './app/containers/UsersContainer';
+import FollowContainer from './app/containers/FollowContainer';
 
 class Router extends Component {
   render () {
@@ -34,6 +36,8 @@ class Router extends Component {
         <Route exact path="/articles/:id" component={Article} />
         <Route path="/article/update" component={UpdateArticleContainer} />
         <Route exact path="/search" component={SearchComponent}/>
+        <Route exact path="/users" component={UsersContainer} />
+        <Route exact path="/users/following/" component={FollowContainer} />
       </BrowserRouter>
     );
   }

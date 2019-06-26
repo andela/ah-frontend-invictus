@@ -37,6 +37,10 @@ export class NavbarComponent extends Component {
                 <li className="nav-item">
                   <Link className="nav-link" to="/profile">Profile</Link></li>
                 <li className="nav-item">
+                  <Link className="nav-link" to="/users">Users</Link></li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/users/following">Following</Link></li>
+                <li className="nav-item">
                   <Link className="nav-link" to="/logout">Logout</Link></li>
               </ul>) : (
               <ul className="navbar-nav ml-2 ">

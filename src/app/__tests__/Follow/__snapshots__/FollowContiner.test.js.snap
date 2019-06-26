@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Follow Container Testing mapStateToProps 1`] = `
+Object {
+  "currentUser": "username",
+  "following": undefined,
+  "profiles": undefined,
+}
+`;
+
+exports[`Testing Follow Container matches snapshot 1`] = `
+<FollowComponent
+  state={
+    Object {
+      "componentDidMount": [MockFunction],
+      "followUser": [MockFunction] {
+        "calls": Array [
+          Array [
+            null,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+/>
+`;
